@@ -1,0 +1,43 @@
+jira.Board GWRFA_board@s {
+  name = "GWRFA board"
+  type = "kanban"
+  admins = {
+    users = [
+      "Geoffrey Routledge",
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.GWR_Finance_App@s
+  }
+  filterId = jira.Filter.instance.Filter_for_GWRFA_board@s
+  columnConfig = {
+    columns = [
+      {
+        name = "Backlog"
+        statuses = [
+          jira.Status.instance.Backlog,
+        ]
+      },
+      {
+        name = "Selected for Development"
+        statuses = [
+          jira.Status.instance.Selected_for_Development@s,
+        ]
+      },
+      {
+        name = "In Progress"
+        statuses = [
+          jira.Status.instance.In_Progress@s,
+        ]
+      },
+      {
+        name = "Done"
+        statuses = [
+          jira.Status.instance.Done,
+        ]
+      },
+    ]
+    constraintType = "issueCount"
+  }
+  subQuery = "fixVersion in unreleasedVersions() OR fixVersion is EMPTY"
+}

@@ -1,0 +1,4 @@
+type jira.TimeTrackingProviders {
+  "List<jira.TimeTrackingProvider>" items {
+  }
+}

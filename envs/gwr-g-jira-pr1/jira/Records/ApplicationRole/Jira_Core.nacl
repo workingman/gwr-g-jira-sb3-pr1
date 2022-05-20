@@ -1,0 +1,38 @@
+jira.ApplicationRole Jira_Core@s {
+  key = "jira-core"
+  groups = [
+    "jira-workmanagement-users-gwr-pr1",
+    "atlassian-addons-admin",
+    "site-admins",
+  ]
+  groupDetails = [
+    {
+      name = "jira-workmanagement-users-gwr-pr1"
+      groupId = "fcf7a4f2-9d5b-4bb7-a9db-d07e59d6153a"
+    },
+    {
+      name = "atlassian-addons-admin"
+      groupId = "ded38520-3441-42f5-ba19-5a510ef954fd"
+    },
+    {
+      name = "site-admins"
+      groupId = "a1662b77-176d-4efe-b5ab-db460147201a"
+    },
+  ]
+  name = "Jira Core"
+  defaultGroups = [
+    "jira-workmanagement-users-gwr-pr1",
+  ]
+  defaultGroupsDetails = [
+    {
+      name = "jira-workmanagement-users-gwr-pr1"
+      groupId = "fcf7a4f2-9d5b-4bb7-a9db-d07e59d6153a"
+    },
+  ]
+  selectedByDefault = false
+  defined = true
+  numberOfSeats = 35000
+  userCountDescription = "users"
+  hasUnlimitedSeats = false
+  platform = true
+}

@@ -1,0 +1,10 @@
+type jira.WorkflowRules {
+  "List<jira.Validator>" validators {
+  }
+  "List<jira.PostFunction>" postFunctions {
+  }
+  jira.WorkflowCondition conditions {
+  }
+  "List<jira.Trigger>" triggers {
+  }
+}

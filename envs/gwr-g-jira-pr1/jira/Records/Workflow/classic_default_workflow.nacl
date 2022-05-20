@@ -1,0 +1,278 @@
+jira.Workflow classic_default_workflow@s {
+  description = "The classic JIRA default workflow"
+  transitions = [
+    {
+      name = "Close Issue"
+      description = ""
+      from = [
+        jira.Status.instance.Open,
+        jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Reopened,
+      ]
+      to = jira.Status.instance.Closed
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Closed@s
+              }
+            }
+          },
+        ]
+        conditions = {
+          operator = "AND"
+          conditions = [
+            {
+              type = "PermissionCondition"
+              configuration = {
+                permissionKey = "RESOLVE_ISSUES"
+              }
+            },
+            {
+              type = "PermissionCondition"
+              configuration = {
+                permissionKey = "CLOSE_ISSUES"
+              }
+            },
+          ]
+        }
+      }
+    },
+    {
+      name = "Close Issue"
+      description = "Closing an issue indicates there is no more work to be done on it, and it has been verified as complete."
+      from = [
+        jira.Status.instance.Resolved,
+      ]
+      to = jira.Status.instance.Closed
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Closed@s
+              }
+            }
+          },
+        ]
+        conditions = {
+          type = "PermissionCondition"
+          configuration = {
+            permissionKey = "CLOSE_ISSUES"
+          }
+        }
+      }
+    },
+    {
+      name = "Create Issue"
+      description = ""
+      to = jira.Status.instance.Open
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Created@s
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      name = "Reopen Issue"
+      description = ""
+      from = [
+        jira.Status.instance.Resolved,
+        jira.Status.instance.Closed,
+      ]
+      to = jira.Status.instance.Reopened
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Reopened@s
+              }
+            }
+          },
+        ]
+        conditions = {
+          type = "PermissionCondition"
+          configuration = {
+            permissionKey = "RESOLVE_ISSUES"
+          }
+        }
+      }
+    },
+    {
+      name = "Resolve Issue"
+      description = ""
+      from = [
+        jira.Status.instance.Open,
+        jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Reopened,
+      ]
+      to = jira.Status.instance.Resolved
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Resolved@s
+              }
+            }
+          },
+        ]
+        conditions = {
+          type = "PermissionCondition"
+          configuration = {
+            permissionKey = "RESOLVE_ISSUES"
+          }
+        }
+      }
+    },
+    {
+      name = "Start Progress"
+      description = ""
+      from = [
+        jira.Status.instance.Open,
+        jira.Status.instance.Reopened,
+      ]
+      to = jira.Status.instance.In_Progress@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Work_Started_On_Issue@s
+              }
+            }
+          },
+        ]
+        conditions = {
+          type = "AllowOnlyAssignee"
+        }
+      }
+    },
+    {
+      name = "Stop Progress"
+      description = ""
+      from = [
+        jira.Status.instance.In_Progress@s,
+      ]
+      to = jira.Status.instance.Open
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Work_Stopped_On_Issue@s
+              }
+            }
+          },
+        ]
+        conditions = {
+          type = "AllowOnlyAssignee"
+        }
+      }
+    },
+  ]
+  statuses = [
+    {
+      id = jira.Status.instance.Closed
+      name = "Closed"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "false"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.In_Progress@s
+      name = "In Progress"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.Open
+      name = "Open"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.Reopened
+      name = "Reopened"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.Resolved
+      name = "Resolved"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+  ]
+  name = "classic default workflow"
+}

@@ -1,0 +1,17 @@
+type jira.Webhook {
+  serviceid id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string url {
+  }
+  boolean excludeBody {
+  }
+  jira.WebhookFilters filters {
+  }
+  "List<string>" events {
+  }
+  boolean enabled {
+  }
+}

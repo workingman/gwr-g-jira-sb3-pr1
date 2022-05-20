@@ -1,0 +1,12 @@
+type jira.Boards {
+  number maxResults {
+  }
+  number startAt {
+  }
+  number total {
+  }
+  boolean isLast {
+  }
+  "List<jira.Board>" values {
+  }
+}

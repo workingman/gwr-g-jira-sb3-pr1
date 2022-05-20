@@ -1,0 +1,11 @@
+type jira.FieldConfigurationScheme {
+  serviceid id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  "List<jira.FieldConfigurationIssueTypeItem>" items {
+  }
+}

@@ -1,0 +1,12 @@
+type jira.Board_admins_users_avatarUrls {
+  string "32x32" {
+  }
+  string "24x24" {
+  }
+  string "48x48" {
+  }
+  string "16x16" {
+  }
+  "Map<unknown>" additionalProperties {
+  }
+}

@@ -1,0 +1,13 @@
+type jira.ScreenScheme {
+  serviceid_number id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  jira.ScreenTypes screens {
+  }
+  jira.IssueTypeScreenSchemes issueTypeScreenSchemes {
+  }
+}

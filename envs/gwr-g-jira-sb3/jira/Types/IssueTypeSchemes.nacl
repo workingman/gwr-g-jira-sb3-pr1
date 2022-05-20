@@ -1,0 +1,14 @@
+type jira.IssueTypeSchemes {
+  string nextPage {
+  }
+  number maxResults {
+  }
+  number startAt {
+  }
+  number total {
+  }
+  boolean isLast {
+  }
+  "List<jira.IssueTypeScheme>" values {
+  }
+}

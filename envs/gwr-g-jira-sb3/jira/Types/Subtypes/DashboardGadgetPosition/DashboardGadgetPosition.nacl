@@ -1,0 +1,12 @@
+type jira.DashboardGadgetPosition {
+  number "The row position of the gadget." {
+  }
+  number "The column position of the gadget." {
+  }
+  "Map<unknown>" additionalProperties {
+  }
+  number column {
+  }
+  number row {
+  }
+}

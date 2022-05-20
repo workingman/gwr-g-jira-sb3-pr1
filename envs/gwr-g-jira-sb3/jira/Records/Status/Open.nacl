@@ -1,0 +1,4 @@
+jira.Status Open {
+  description = "The issue is open and ready for the assignee to start work on it."
+  name = "Open"
+}

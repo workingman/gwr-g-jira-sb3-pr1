@@ -1,0 +1,8 @@
+type jira.PermissionGrant {
+  serviceid_number id {
+  }
+  jira.PermissionHolder holder {
+  }
+  string permission {
+  }
+}

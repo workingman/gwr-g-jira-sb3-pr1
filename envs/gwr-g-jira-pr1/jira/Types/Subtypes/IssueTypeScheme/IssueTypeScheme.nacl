@@ -1,0 +1,15 @@
+type jira.IssueTypeScheme {
+  string id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  string defaultIssueTypeId {
+  }
+  boolean isDefault {
+  }
+  "List<jira.IssueTypeSchemeMapping>" issueTypeIds {
+  }
+}

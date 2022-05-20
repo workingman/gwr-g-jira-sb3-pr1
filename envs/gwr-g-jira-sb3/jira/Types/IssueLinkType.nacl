@@ -1,0 +1,13 @@
+type jira.IssueLinkType {
+  serviceid id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string inward {
+  }
+  string outward {
+  }
+  "Map<unknown>" additionalProperties {
+  }
+}

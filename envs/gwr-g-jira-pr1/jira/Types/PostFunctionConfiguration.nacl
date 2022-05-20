@@ -1,0 +1,24 @@
+type jira.PostFunctionConfiguration {
+  jira.PostFunctionEvent event {
+  }
+  string fieldId {
+  }
+  string sourceFieldId {
+  }
+  string destinationFieldId {
+  }
+  string copyType {
+  }
+  jira.ProjectRoleConfig projectRole {
+  }
+  jira.IssueSecurityLevel issueSecurityLevel {
+  }
+  jira.WebhookConfig webhook {
+  }
+  string mode {
+  }
+  string fieldValue {
+  }
+  string value {
+  }
+}

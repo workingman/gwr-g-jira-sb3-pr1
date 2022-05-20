@@ -1,0 +1,12 @@
+type jira.FieldConfigurationItem {
+  serviceid id {
+  }
+  string description {
+  }
+  boolean isHidden {
+  }
+  boolean isRequired {
+  }
+  string renderer {
+  }
+}

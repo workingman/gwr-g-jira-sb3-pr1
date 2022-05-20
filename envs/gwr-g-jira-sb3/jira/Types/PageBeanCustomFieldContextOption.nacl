@@ -1,0 +1,14 @@
+type jira.PageBeanCustomFieldContextOption {
+  string nextPage {
+  }
+  number maxResults {
+  }
+  number startAt {
+  }
+  number total {
+  }
+  boolean isLast {
+  }
+  "List<jira.CustomFieldContextOption>" values {
+  }
+}

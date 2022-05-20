@@ -1,4 +1,12 @@
 envs {
   envsCloud = [
+    {
+      uuid = "66c1f960-b2ef-4104-a11d-e46b8612e437"
+      folderName = "gwr-g-jira-pr1"
+    },
+    {
+      uuid = "01a7103a-7f9e-4c6a-ba1a-b5f98781a0d9"
+      folderName = "gwr-g-jira-sb3"
+    },
   ]
 }

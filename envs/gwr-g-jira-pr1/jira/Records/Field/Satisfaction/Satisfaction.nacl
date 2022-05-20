@@ -1,0 +1,10 @@
+jira.Field Satisfaction__c {
+  name = "Satisfaction"
+  description = "Stores request feedback in service project requests. This custom field is created programmatically and required by service project."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-request-feedback-searcher"
+  type = "com.atlassian.servicedesk:sd-request-feedback"
+  contexts = [
+    jira.CustomFieldContext.instance.Satisfaction__c_Default_Configuration_Scheme_for_Satisfaction@uuussss,
+  ]
+}

@@ -1,0 +1,25 @@
+type jira.ProjectRole {
+  string name {
+  }
+  serviceid_number id {
+    _hidden_value = true
+  }
+  string description {
+  }
+  "List<jira.RoleActor>" actors {
+  }
+  jira.Scope scope {
+  }
+  string translatedName {
+  }
+  boolean currentUserRole {
+  }
+  boolean roleConfigurable {
+  }
+  boolean admin {
+  }
+  boolean default {
+  }
+  "Map<unknown>" additionalProperties {
+  }
+}

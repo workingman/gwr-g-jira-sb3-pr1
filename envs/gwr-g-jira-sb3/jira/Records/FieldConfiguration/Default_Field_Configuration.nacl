@@ -1,0 +1,278 @@
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_text1__c_suu@uumuuuum {
+  id = jira.Field.instance.GWR_text1__c@suu
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Story_Points__c_suu@uumuuuum {
+  id = jira.Field.instance.Story_Points__c@suu
+  description = "Measurement of complexity and/or size of a requirement."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Location__c@uumuuu {
+  id = jira.Field.instance.Location__c
+  description = "Adding both UUID and Location fields to a project, will enable JIRA Mobile Connect for that project."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_uuid__c@uumuuu {
+  id = jira.Field.instance.uuid__c
+  description = "Adding both UUID and Location fields to a project, will enable JIRA Mobile Connect for that project."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s__CHART__Time_in_Status__c_hisssuu@uumuuuuuuuum {
+  id = jira.Field.instance._CHART__Time_in_Status__c@hisssuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s__CHART__Date_of_First_Response__c_hissssuu@uumuuuuuuuuum {
+  id = jira.Field.instance._CHART__Date_of_First_Response__c@hissssuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Actual_end__c_suu@uumuuuum {
+  id = jira.Field.instance.Actual_end__c@suu
+  description = "Enter when the change actually ended."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Actual_start__c_suu@uumuuuum {
+  id = jira.Field.instance.Actual_start__c@suu
+  description = "Enter when the change actually started."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Change_reason__c_suu@uumuuuum {
+  id = jira.Field.instance.Change_reason__c@suu
+  description = "Choose the reason for the change request"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Change_risk__c_suu@uumuuuum {
+  id = jira.Field.instance.Change_risk__c@suu
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Change_type__c_suu@uumuuuum {
+  id = jira.Field.instance.Change_type__c@suu
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Impact__c@uumuuu {
+  id = jira.Field.instance.Impact__c
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Approvers__c@uumuuu {
+  id = jira.Field.instance.Approvers__c
+  description = "Contains users needed for approval. This custom field was created by Jira Service Desk."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Linked_Issues_s@uumuum {
+  id = jira.Field.instance.Linked_Issues@s
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Log_Work_s@uumuum {
+  id = jira.Field.instance.Log_Work@s
+  description = "Allows work to be logged whilst creating, editing or transitioning issues."
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Labels@uumu {
+  id = jira.Field.instance.Labels
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Comment@uumu {
+  id = jira.Field.instance.Comment
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Attachment@uumu {
+  id = jira.Field.instance.Attachment
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Resolution@uumu {
+  id = jira.Field.instance.Resolution
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Time_tracking_s@uumuum {
+  id = jira.Field.instance.Time_tracking@s
+  description = "An estimate of how much work remains until this issue will be resolved.<br>The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number)<br>Examples: 4d, 5h 30m, 60m and 3w.<br>"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Description@uumu {
+  id = jira.Field.instance.Description
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Environment@uumu {
+  id = jira.Field.instance.Environment
+  description = "For example operating system, software platform and/or hardware specifications (include as appropriate for the issue)."
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Reporter@uumu {
+  id = jira.Field.instance.Reporter
+  isHidden = false
+  isRequired = true
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Assignee@uumu {
+  id = jira.Field.instance.Assignee
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Fix_versions_s@uumuum {
+  id = jira.Field.instance.Fix_versions@s
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Affects_versions_s@uumuum {
+  id = jira.Field.instance.Affects_versions@s
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Components@uumu {
+  id = jira.Field.instance.Components
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Due_date_s@uumuum {
+  id = jira.Field.instance.Due_date@s
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Priority@uumu {
+  id = jira.Field.instance.Priority
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Security_Level_s@uumuum {
+  id = jira.Field.instance.Security_Level@s
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Issue_Type_s@uumuum {
+  id = jira.Field.instance.Issue_Type@s
+  isHidden = false
+  isRequired = true
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_Summary@uumu {
+  id = jira.Field.instance.Summary
+  isHidden = false
+  isRequired = true
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfiguration Default_Field_Configuration@s {
+  name = "Default Field Configuration"
+  description = "The default field configuration"
+  isDefault = true
+}

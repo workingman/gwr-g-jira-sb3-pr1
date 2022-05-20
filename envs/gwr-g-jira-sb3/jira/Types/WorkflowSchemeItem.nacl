@@ -1,0 +1,6 @@
+type jira.WorkflowSchemeItem {
+  string issueType {
+  }
+  string workflow {
+  }
+}

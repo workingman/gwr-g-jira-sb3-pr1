@@ -1,0 +1,29 @@
+type jira.WorkflowScheme {
+  serviceid_number id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  string defaultWorkflow {
+  }
+  string originalDefaultWorkflow {
+  }
+  jira.WorkflowScheme_originalIssueTypeMappings originalIssueTypeMappings {
+  }
+  boolean draft {
+  }
+  string lastModifiedUser {
+  }
+  string lastModified {
+  }
+  boolean updateDraftIfNeeded {
+  }
+  jira.WorkflowScheme_issueTypes issueTypes {
+  }
+  "List<jira.WorkflowSchemeItem>" items {
+  }
+  "List<jira.StatusMigration>" statusMigrations {
+  }
+}

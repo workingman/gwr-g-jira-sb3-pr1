@@ -1,0 +1,11 @@
+type jira.IssueTypeScreenScheme {
+  serviceid id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  "List<jira.IssueTypeScreenSchemeItem>" issueTypeMappings {
+  }
+}

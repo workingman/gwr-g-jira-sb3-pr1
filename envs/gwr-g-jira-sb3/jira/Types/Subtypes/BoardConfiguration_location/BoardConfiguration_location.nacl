@@ -1,0 +1,6 @@
+type jira.BoardConfiguration_location {
+  string type {
+  }
+  string projectKeyOrId {
+  }
+}

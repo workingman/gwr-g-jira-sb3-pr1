@@ -1,0 +1,14 @@
+type jira.PageBeanComponentWithIssueCount {
+  string nextPage {
+  }
+  number maxResults {
+  }
+  number startAt {
+  }
+  number total {
+  }
+  boolean isLast {
+  }
+  "List<jira.ProjectComponent>" values {
+  }
+}

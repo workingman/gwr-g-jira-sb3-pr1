@@ -1,0 +1,11 @@
+type jira.ScreenableTab {
+  serviceid_number id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  "Map<unknown>" additionalProperties {
+  }
+  "List<string>" fields {
+  }
+}

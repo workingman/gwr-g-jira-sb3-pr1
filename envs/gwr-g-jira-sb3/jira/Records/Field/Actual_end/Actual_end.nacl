@@ -1,0 +1,9 @@
+jira.Field Actual_end__c@suu {
+  name = "Actual end"
+  description = "Enter when the change actually ended."
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:datetimerange"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:datetime"
+  contexts = [
+    jira.CustomFieldContext.instance.Actual_end__c_suu_Default_Configuration_Scheme_for_Actual_end@uuumusssss,
+  ]
+}

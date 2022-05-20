@@ -1,0 +1,9 @@
+jira.Field Story_Points__c@suu {
+  name = "Story Points"
+  description = "Measurement of complexity and/or size of a requirement."
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  contexts = [
+    jira.CustomFieldContext.instance.Story_Points__c_suu_Default_Configuration_Scheme_for_Story_Points@uuumusssss,
+  ]
+}

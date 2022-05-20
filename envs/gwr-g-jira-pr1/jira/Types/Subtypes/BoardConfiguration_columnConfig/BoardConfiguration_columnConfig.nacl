@@ -1,0 +1,6 @@
+type jira.BoardConfiguration_columnConfig {
+  "List<jira.BoardConfiguration_columnConfig_columns>" columns {
+  }
+  string constraintType {
+  }
+}

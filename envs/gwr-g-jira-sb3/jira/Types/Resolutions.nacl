@@ -1,0 +1,4 @@
+type jira.Resolutions {
+  "List<jira.Resolution>" items {
+  }
+}

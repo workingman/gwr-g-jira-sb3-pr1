@@ -1,0 +1,21 @@
+type jira.CustomFieldContext {
+  serviceid id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  boolean isGlobalContext {
+  }
+  boolean isAnyIssueType {
+  }
+  "Map<jira.CustomFieldContextOption>" options {
+  }
+  "List<string>" projectIds {
+  }
+  "List<string>" issueTypeIds {
+  }
+  jira.CustomFieldContextDefaultValue defaultValue {
+  }
+}

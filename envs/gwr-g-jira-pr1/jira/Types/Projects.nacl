@@ -1,0 +1,14 @@
+type jira.Projects {
+  string nextPage {
+  }
+  number maxResults {
+  }
+  number startAt {
+  }
+  number total {
+  }
+  boolean isLast {
+  }
+  "List<jira.Project>" values {
+  }
+}

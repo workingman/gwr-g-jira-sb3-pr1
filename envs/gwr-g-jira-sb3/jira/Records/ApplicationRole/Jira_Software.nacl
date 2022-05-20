@@ -1,0 +1,38 @@
+jira.ApplicationRole Jira_Software@s {
+  key = "jira-software"
+  groups = [
+    "jira-software-users-gwr-sb3",
+    "atlassian-addons-admin",
+    "site-admins",
+  ]
+  groupDetails = [
+    {
+      name = "site-admins"
+      groupId = "255b6d46-5d66-4cbc-8be2-74849e19a098"
+    },
+    {
+      name = "atlassian-addons-admin"
+      groupId = "c389a3a5-49ec-4d49-bb3d-0320e232c1db"
+    },
+    {
+      name = "jira-software-users-gwr-sb3"
+      groupId = "86aa65cd-3cd9-43dc-b09d-b61aee105487"
+    },
+  ]
+  name = "Jira Software"
+  defaultGroups = [
+    "jira-software-users-gwr-sb3",
+  ]
+  defaultGroupsDetails = [
+    {
+      name = "jira-software-users-gwr-sb3"
+      groupId = "86aa65cd-3cd9-43dc-b09d-b61aee105487"
+    },
+  ]
+  selectedByDefault = false
+  defined = true
+  numberOfSeats = 10
+  userCountDescription = "user"
+  hasUnlimitedSeats = false
+  platform = false
+}
