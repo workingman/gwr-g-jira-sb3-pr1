@@ -1,0 +1,5 @@
+workspace {
+  uid = "bebb1fb6-b239-45e7-b7e6-36d3a5599018"
+  name = "gwr-g-jira-sb3-pr1"
+  staleStateThresholdMinutes = undefined
+}
