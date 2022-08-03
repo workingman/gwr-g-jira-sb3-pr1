@@ -1,6 +1,6 @@
-jira.Automation Subtask_for_bugs_GWR_Finance_App@ssuss {
-  name = "Subtask for bugs"
-  state = "DISABLED"
+jira.Automation Bug_Automation_GWR_Finance_App@suss {
+  name = "GWR Bug Automation"
+  state = "ENABLED"
   authorAccountId = "61980f073618cd006f48823b"
   actor = {
     type = "ACCOUNT_ID"
@@ -36,23 +36,6 @@ jira.Automation Subtask_for_bugs_GWR_Finance_App@ssuss {
     },
     {
       component = "ACTION"
-      schemaVersion = 1
-      type = "jira.issue.create.subtasks"
-      value = {
-        subtasks = [
-          {
-            type = "10008"
-            summary = "Fix"
-          },
-          {
-            type = "10008"
-            summary = "QA"
-          },
-        ]
-      }
-    },
-    {
-      component = "ACTION"
       schemaVersion = 10
       type = "jira.issue.create"
       value = {
@@ -65,8 +48,8 @@ jira.Automation Subtask_for_bugs_GWR_Finance_App@ssuss {
             fieldType = "project"
             type = "SET"
             value = {
-              type = "COPY"
-              value = "trigger"
+              type = "ID"
+              value = "10001"
             }
           },
           {
@@ -100,39 +83,36 @@ jira.Automation Subtask_for_bugs_GWR_Finance_App@ssuss {
             }
             fieldType = "summary"
             type = "SET"
-            value = "Investigate"
-          },
-          {
-            field = {
-              type = "ID"
-              value = "description"
-            }
-            fieldType = "description"
-            type = "SET"
-          },
-          {
-            field = {
-              type = "ID"
-              value = "assignee"
-            }
-            fieldType = "assignee"
-            type = "SET"
-            value = {
-              type = "ID"
-              value = "61980f073618cd006f48823b"
-            }
-          },
-          {
-            field = {
-              type = "ID"
-              value = "duedate"
-            }
-            fieldType = "duedate"
-            type = "SET"
-            value = "{{no.plusDay(2)}}"
+            value = "Triage"
           },
         ]
         sendNotifications = false
+      }
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.create.subtasks"
+      value = {
+        subtasks = [
+          {
+            type = "10008"
+            summary = "Estimate cost"
+          },
+        ]
+      }
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.create.subtasks"
+      value = {
+        subtasks = [
+          {
+            type = "10008"
+            summary = "Fix"
+          },
+        ]
       }
     },
   ]

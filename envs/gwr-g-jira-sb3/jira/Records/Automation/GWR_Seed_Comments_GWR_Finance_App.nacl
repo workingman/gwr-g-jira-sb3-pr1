@@ -1,0 +1,39 @@
+jira.Automation GWR_Seed_Comments_GWR_Finance_App@ssuss {
+  name = "GWR Seed Comments"
+  state = "ENABLED"
+  authorAccountId = "61980f073618cd006f48823b"
+  actor = {
+    type = "ACCOUNT_ID"
+    value = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment"
+      value = {
+        comment = "GWR comment on issue"
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.GWR_Finance_App@s
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+}

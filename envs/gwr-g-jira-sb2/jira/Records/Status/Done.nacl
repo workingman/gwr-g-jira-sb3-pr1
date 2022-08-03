@@ -1,0 +1,7 @@
+jira.Status Done {
+  name = "Done"
+  description = ""
+  iconUrl = "/"
+  untranslatedName = "Done"
+  statusCategory = jira.StatusCategory.instance.Done
+}

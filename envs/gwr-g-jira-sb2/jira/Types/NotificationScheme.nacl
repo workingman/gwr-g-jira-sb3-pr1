@@ -1,0 +1,18 @@
+type jira.NotificationScheme {
+  string expand {
+  }
+  serviceid_number id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  "List<jira.NotificationSchemeEvent>" notificationSchemeEvents {
+  }
+  jira.Scope scope {
+  }
+  "Map<number>" notificationIds {
+    _hidden_value = true
+  }
+}

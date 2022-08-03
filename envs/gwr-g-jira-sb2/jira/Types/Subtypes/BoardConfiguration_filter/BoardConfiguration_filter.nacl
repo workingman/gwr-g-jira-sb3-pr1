@@ -1,0 +1,4 @@
+type jira.BoardConfiguration_filter {
+  serviceid id {
+  }
+}

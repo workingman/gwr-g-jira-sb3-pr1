@@ -1,0 +1,3 @@
+jira.Group jira_servicemanagement_users_gwr_sb2@b {
+  name = "jira-servicemanagement-users-gwr-sb2"
+}

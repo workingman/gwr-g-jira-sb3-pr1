@@ -1,0 +1,23 @@
+type jira.IssueType {
+  serviceid id {
+    _hidden_value = true
+  }
+  string description {
+  }
+  string iconUrl {
+  }
+  string name {
+  }
+  boolean subtask {
+  }
+  number avatarId {
+  }
+  string entityId {
+  }
+  number hierarchyLevel {
+  }
+  jira.Scope scope {
+  }
+  string untranslatedName {
+  }
+}

@@ -1,0 +1,4 @@
+jira.Status Building {
+  description = "Source code has been committed, and JIRA is waiting for the code to be built before moving to the next status."
+  name = "Building"
+}

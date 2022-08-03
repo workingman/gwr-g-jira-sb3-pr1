@@ -1,0 +1,10 @@
+type jira.UpdatedProjectCategory {
+  serviceid id {
+  }
+  string description {
+  }
+  string name {
+  }
+  "Map<unknown>" additionalProperties {
+  }
+}

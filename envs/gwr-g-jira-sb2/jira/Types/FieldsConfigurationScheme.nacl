@@ -1,0 +1,14 @@
+type jira.FieldsConfigurationScheme {
+  string nextPage {
+  }
+  number maxResults {
+  }
+  number startAt {
+  }
+  number total {
+  }
+  boolean isLast {
+  }
+  "List<jira.FieldConfigurationScheme>" values {
+  }
+}

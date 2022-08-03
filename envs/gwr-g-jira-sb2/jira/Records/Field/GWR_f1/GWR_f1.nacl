@@ -1,0 +1,7 @@
+
+jira.Field GWR_f1__float__c {
+  name = "GWR_f1"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+}

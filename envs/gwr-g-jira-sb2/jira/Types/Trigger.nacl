@@ -1,0 +1,6 @@
+type jira.Trigger {
+  string key {
+  }
+  "Map<unknown>" configuration {
+  }
+}

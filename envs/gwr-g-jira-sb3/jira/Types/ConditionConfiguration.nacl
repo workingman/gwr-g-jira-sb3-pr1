@@ -35,4 +35,6 @@ type jira.ConditionConfiguration {
   }
   string comparisonType {
   }
+  string group {
+  }
 }

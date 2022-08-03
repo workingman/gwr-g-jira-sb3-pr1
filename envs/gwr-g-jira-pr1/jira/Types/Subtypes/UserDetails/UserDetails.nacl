@@ -1,0 +1,20 @@
+type jira.UserDetails {
+  string name {
+  }
+  string key {
+  }
+  string accountId {
+  }
+  string emailAddress {
+  }
+  jira.AvatarUrlsBean avatarUrls {
+  }
+  string displayName {
+  }
+  boolean active {
+  }
+  string timeZone {
+  }
+  string accountType {
+  }
+}

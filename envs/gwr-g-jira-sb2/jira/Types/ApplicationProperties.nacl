@@ -1,0 +1,4 @@
+type jira.ApplicationProperties {
+  "List<jira.ApplicationProperty>" items {
+  }
+}

@@ -1,0 +1,10 @@
+
+jira.Field gwr_f1445__float__c {
+  name = "gwr_f1445"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  contexts = [
+    jira.CustomFieldContext.instance.gwr_f1445__float__c_Default_Configuration_Scheme_for_gwr_f1445@uuuuuussssu,
+  ]
+}

@@ -7,6 +7,12 @@ envs {
       }
     },
     {
+      name = "gwr-g-jira-sb2"
+      accountToServiceName = {
+        jira = "jira"
+      }
+    },
+    {
       name = "gwr-g-jira-sb3"
       accountToServiceName = {
         jira = "jira"

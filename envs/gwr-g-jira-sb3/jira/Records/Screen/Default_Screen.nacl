@@ -21,6 +21,7 @@ jira.Screen Default_Screen@s {
         jira.Field.instance.Attachment,
         jira.Field.instance.Labels,
         jira.Field.instance.GWR_text1__c@suu,
+        jira.Field.instance.GWR_Category__select__c@suuuu,
       ]
       position = 0
     }

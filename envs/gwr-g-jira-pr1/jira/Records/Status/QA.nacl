@@ -1,0 +1,7 @@
+jira.Status QA {
+  description = "This status is managed internally by Jira Software"
+  
+  name = "QA"
+  
+  
+}

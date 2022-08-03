@@ -1,0 +1,21 @@
+jira.Project GWR1053 {
+  key = "GWR1053"
+  description = ""
+  name = "GWR1053"
+  projectKeys = [
+    "GWR1053",
+  ]
+  projectTypeKey = "software"
+  simplified = false
+  style = "classic"
+  isPrivate = false
+  permissions = {
+    canEdit = true
+  }
+  workflowScheme = jira.WorkflowScheme.instance.GWR_Primary_Workflow_Scheme@s
+  permissionScheme = jira.PermissionScheme.instance.GWR1053_software_permission_scheme_2@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.GWR1053__Kanban_Issue_Type_Screen_Scheme@fsssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.GWR1053__Kanban_Issue_Type_Scheme@fssss
+  leadAccountId = "61980f073618cd006f48823b"
+}

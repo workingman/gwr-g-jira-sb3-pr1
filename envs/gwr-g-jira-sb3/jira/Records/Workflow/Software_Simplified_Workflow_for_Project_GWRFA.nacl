@@ -103,9 +103,59 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       }
     },
     {
+      name = "QA"
+      description = "Managed by JIRA Software"
+      to = jira.Status.instance.QA
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
       name = "Selected for Development"
       description = ""
       to = jira.Status.instance.Selected_for_Development@s
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      name = "Validating"
+      description = "Managed by JIRA Software"
+      to = jira.Status.instance.Validating
       type = "global"
       rules = {
         postFunctions = [
@@ -160,8 +210,28 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       ]
     },
     {
+      id = jira.Status.instance.QA
+      name = "QA"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
       id = jira.Status.instance.Selected_for_Development@s
       name = "Selected for Development"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.Validating
+      name = "Validating"
       properties = [
         {
           key = "jira.issue.editable"

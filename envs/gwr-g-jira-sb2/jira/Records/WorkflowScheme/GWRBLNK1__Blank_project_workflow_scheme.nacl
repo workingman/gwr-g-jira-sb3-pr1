@@ -1,0 +1,15 @@
+jira.WorkflowScheme GWRBLNK1__Blank_project_workflow_scheme@fssss {
+  name = "GWRBLNK1: Blank project workflow scheme"
+  description = ""
+  defaultWorkflow = jira.Workflow.instance.GWRBLNK1__Blank_project_default_workflow@fssss
+  items = [
+    {
+      workflow = jira.Workflow.instance.GWRBLNK1__Blank_project_default_workflow@fssss
+      issueType = jira.IssueType.instance.Task
+    },
+    {
+      workflow = jira.Workflow.instance.GWRBLNK1__Blank_project_default_workflow@fssss
+      issueType = jira.IssueType.instance.Sub_task@b
+    },
+  ]
+}

@@ -1,0 +1,7 @@
+jira.Status To_Do@s {
+  description = ""
+  iconUrl = "/images/icons/status_generic.gif"
+  name = "To Do"
+  untranslatedName = "To Do"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+}

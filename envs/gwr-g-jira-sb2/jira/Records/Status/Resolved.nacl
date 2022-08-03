@@ -1,0 +1,7 @@
+jira.Status Resolved {
+  description = "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed."
+  iconUrl = "/images/icons/statuses/resolved.png"
+  name = "Resolved"
+  untranslatedName = "Resolved"
+  statusCategory = jira.StatusCategory.instance.Done
+}

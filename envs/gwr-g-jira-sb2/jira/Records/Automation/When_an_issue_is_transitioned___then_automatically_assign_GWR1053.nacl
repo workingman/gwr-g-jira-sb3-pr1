@@ -1,0 +1,56 @@
+jira.Automation When_an_issue_is_transitioned___then_automatically_assign_GWR1053@sssss_08594sssu {
+  name = "When an issue is transitioned → then automatically assign"
+  state = "ENABLED"
+  authorAccountId = "61980f073618cd006f48823b"
+  actor = {
+    type = "ACCOUNT_ID"
+    value = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = -1
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+      toStatus = [
+        {
+          type = "ID"
+          value = "3"
+        },
+      ]
+    }
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.issue.assign"
+      value = {
+        assignType = "INITIATOR"
+      }
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.GWR1053
+    },
+  ]
+  tags = [
+    {
+      tagType = "CREATION_TYPE"
+      tagValue = "RECOMMENDED"
+    },
+    {
+      tagType = "SAMPLE_RULE"
+      tagValue = "business"
+    },
+    {
+      tagType = "TEMPLATE_ID"
+      tagValue = "business_template_1"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+}

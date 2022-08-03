@@ -1,0 +1,14 @@
+type jira.PageBeanFieldConfigurationSchemeProjects {
+  string nextPage {
+  }
+  number maxResults {
+  }
+  number startAt {
+  }
+  number total {
+  }
+  boolean isLast {
+  }
+  "List<jira.FieldConfigurationSchemeProjects>" values {
+  }
+}

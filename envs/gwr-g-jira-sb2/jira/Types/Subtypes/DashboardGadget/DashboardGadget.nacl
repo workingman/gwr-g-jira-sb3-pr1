@@ -1,0 +1,17 @@
+type jira.DashboardGadget {
+  serviceid_number id {
+    _hidden_value = true
+  }
+  string moduleKey {
+  }
+  string uri {
+  }
+  string color {
+  }
+  jira.DashboardGadgetPosition position {
+  }
+  string title {
+  }
+  "Map<unknown>" properties {
+  }
+}

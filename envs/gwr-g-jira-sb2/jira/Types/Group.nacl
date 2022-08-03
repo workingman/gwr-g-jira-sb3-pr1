@@ -1,0 +1,11 @@
+type jira.Group {
+  string name {
+  }
+  serviceid groupId {
+    _hidden_value = true
+  }
+  jira.PagedListUserDetailsApplicationUser users {
+  }
+  string expand {
+  }
+}

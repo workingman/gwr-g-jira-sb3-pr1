@@ -62,9 +62,9 @@ jira.Permissions_permissions {
     }
     CREATE_PROJECT = {
       key = "CREATE_PROJECT"
-      name = "Create next-gen projects"
+      name = "Create team-managed projects"
       type = "GLOBAL"
-      description = "Create projects separate from shared configurations and schemes. Next-gen projects don't affect existing projects or shared configurations like workflows, fields or permissions. Only licensed users can create next-gen projects."
+      description = "Create projects separate from shared configurations and schemes. Team-managed projects don't affect existing projects or shared configurations like workflows, fields or permissions. Only licensed users can create team-managed projects."
     }
     CREATE_SHARED_OBJECTS = {
       key = "CREATE_SHARED_OBJECTS"

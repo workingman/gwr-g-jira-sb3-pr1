@@ -1,0 +1,10 @@
+type jira.BoardConfiguration_columnConfig_columns {
+  string name {
+  }
+  "List<string>" statuses {
+  }
+  number min {
+  }
+  number max {
+  }
+}

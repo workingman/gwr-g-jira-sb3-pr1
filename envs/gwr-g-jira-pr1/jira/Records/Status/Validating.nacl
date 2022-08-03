@@ -1,0 +1,4 @@
+jira.Status Validating {
+  description = "This status is managed internally by Jira Software"
+  name = "Validating"
+}

@@ -31,6 +31,18 @@ jira.Board GWRFA_board@s {
         ]
       },
       {
+        name = "QA"
+        statuses = [
+          jira.Status.instance.QA,
+        ]
+      },
+      {
+        name = "Validating"
+        statuses = [
+          jira.Status.instance.Validating,
+        ]
+      },
+      {
         name = "Done"
         statuses = [
           jira.Status.instance.Done,

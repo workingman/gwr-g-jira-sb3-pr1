@@ -1,0 +1,22 @@
+jira.Project GWR_Blank1@s {
+  key = "GWRBLNK1"
+  description = ""
+  name = "GWR Blank1"
+  projectKeys = [
+    "GWRBLNK1",
+  ]
+  projectCategory = jira.ProjectCategory.instance.GWR_Prj_Cat1@s
+  projectTypeKey = "business"
+  simplified = false
+  style = "classic"
+  isPrivate = false
+  permissions = {
+    canEdit = true
+  }
+  workflowScheme = jira.WorkflowScheme.instance.GWRBLNK1__Blank_project_workflow_scheme@fssss
+  permissionScheme = jira.PermissionScheme.instance.GWRBLNK1_permission_scheme@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.GWRBLNK1__Blank_project_screen_scheme@fssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.GWRBLNK1__Blank_project_issue_type_scheme@fsssss
+  leadAccountId = "61980f073618cd006f48823b"
+}

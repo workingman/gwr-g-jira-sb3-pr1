@@ -1,34 +1,16 @@
 jira.ApplicationRole Jira_Service_Desk@s {
   key = "jira-servicedesk"
   groups = [
-    "jira-servicemanagement-users-gwr-pr1",
-    "atlassian-addons-admin",
-    "site-admins",
+    jira.Group.instance.jira_servicemanagement_users_gwr_pr1@b,
+    jira.Group.instance.atlassian_addons_admin@b,
+    jira.Group.instance.site_admins@b,
   ]
-  groupDetails = [
-    {
-      name = "atlassian-addons-admin"
-      groupId = "ded38520-3441-42f5-ba19-5a510ef954fd"
-    },
-    {
-      name = "jira-servicemanagement-users-gwr-pr1"
-      groupId = "90327440-6f1c-4125-9e6b-784244727bfc"
-    },
-    {
-      name = "site-admins"
-      groupId = "a1662b77-176d-4efe-b5ab-db460147201a"
-    },
-  ]
+  
   name = "Jira Service Desk"
   defaultGroups = [
-    "jira-servicemanagement-users-gwr-pr1",
+    jira.Group.instance.jira_servicemanagement_users_gwr_pr1@b,
   ]
-  defaultGroupsDetails = [
-    {
-      name = "jira-servicemanagement-users-gwr-pr1"
-      groupId = "90327440-6f1c-4125-9e6b-784244727bfc"
-    },
-  ]
+  
   selectedByDefault = false
   defined = true
   numberOfSeats = 35000

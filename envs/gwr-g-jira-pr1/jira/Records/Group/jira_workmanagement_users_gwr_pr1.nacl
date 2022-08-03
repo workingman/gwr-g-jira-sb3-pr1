@@ -1,0 +1,3 @@
+jira.Group jira_workmanagement_users_gwr_pr1@b {
+  name = "jira-workmanagement-users-gwr-pr1"
+}

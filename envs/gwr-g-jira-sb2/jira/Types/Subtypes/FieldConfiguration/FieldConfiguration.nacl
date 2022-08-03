@@ -1,0 +1,11 @@
+type jira.FieldConfiguration {
+  string name {
+  }
+  string description {
+  }
+  boolean isDefault {
+  }
+  serviceid_number id {
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,17 @@
+type jira.Status {
+  string description {
+  }
+  string iconUrl {
+  }
+  string name {
+  }
+  serviceid id {
+    _hidden_value = true
+  }
+  jira.StatusCategory statusCategory {
+  }
+  "Map<unknown>" additionalProperties {
+  }
+  string untranslatedName {
+  }
+}

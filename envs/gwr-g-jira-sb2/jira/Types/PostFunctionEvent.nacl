@@ -1,0 +1,4 @@
+type jira.PostFunctionEvent {
+  string id {
+  }
+}

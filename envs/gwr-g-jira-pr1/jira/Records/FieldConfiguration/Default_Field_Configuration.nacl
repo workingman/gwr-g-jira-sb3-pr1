@@ -77,6 +77,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Change_risk__c_suu@uum
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Change_type__c_suu@uumuuuum {
   id = jira.Field.instance.Change_type__c@suu
@@ -85,6 +86,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Change_type__c_suu@uum
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Impact__c@uumuuu {
   id = jira.Field.instance.Impact__c
@@ -93,6 +95,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Impact__c@uumuuu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Approvers__c@uumuuu {
   id = jira.Field.instance.Approvers__c
@@ -110,6 +113,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Linked_Issues_s@uumuum
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Log_Work_s@uumuum {
   id = jira.Field.instance.Log_Work@s
@@ -128,6 +132,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Labels@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Comment@uumu {
   id = jira.Field.instance.Comment
@@ -137,6 +142,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Comment@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Attachment@uumu {
   id = jira.Field.instance.Attachment
@@ -145,6 +151,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Attachment@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Resolution@uumu {
   id = jira.Field.instance.Resolution
@@ -153,6 +160,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Resolution@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Time_tracking_s@uumuum {
   id = jira.Field.instance.Time_tracking@s
@@ -171,6 +179,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Description@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Environment@uumu {
   id = jira.Field.instance.Environment
@@ -189,6 +198,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Reporter@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Assignee@uumu {
   id = jira.Field.instance.Assignee
@@ -197,6 +207,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Assignee@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Fix_versions_s@uumuum {
   id = jira.Field.instance.Fix_versions@s
@@ -205,6 +216,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Fix_versions_s@uumuum 
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Affects_versions_s@uumuum {
   id = jira.Field.instance.Affects_versions@s
@@ -213,6 +225,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Affects_versions_s@uum
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Components@uumu {
   id = jira.Field.instance.Components
@@ -221,6 +234,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Components@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Due_date_s@uumuum {
   id = jira.Field.instance.Due_date@s
@@ -229,6 +243,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Due_date_s@uumuum {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Priority@uumu {
   id = jira.Field.instance.Priority
@@ -237,6 +252,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Priority@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Security_Level_s@uumuum {
   id = jira.Field.instance.Security_Level@s
@@ -245,6 +261,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Security_Level_s@uumuu
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Issue_Type_s@uumuum {
   id = jira.Field.instance.Issue_Type@s
@@ -253,6 +270,7 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Issue_Type_s@uumuum {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Summary@uumu {
   id = jira.Field.instance.Summary
@@ -261,9 +279,12 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Summary@uumu {
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,
   ]
+  description = ""
 }
 jira.FieldConfiguration Default_Field_Configuration@s {
   name = "Default Field Configuration"
   description = "The default field configuration"
   isDefault = true
 }
+
+

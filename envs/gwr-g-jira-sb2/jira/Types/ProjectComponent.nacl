@@ -1,0 +1,33 @@
+type jira.ProjectComponent {
+  serviceid id {
+    _hidden_value = true
+  }
+  string name {
+  }
+  string description {
+  }
+  string lead {
+  }
+  string leadUserName {
+  }
+  string leadAccountId {
+  }
+  string assigneeType {
+  }
+  string assignee {
+  }
+  string realAssigneeType {
+  }
+  string realAssignee {
+  }
+  boolean isAssigneeTypeValid {
+  }
+  string project {
+  }
+  number projectId {
+  }
+  number issueCount {
+  }
+  jira.ProjectComponent componentBean {
+  }
+}

@@ -1,0 +1,8 @@
+type jira.BoardConfiguration_estimation {
+  string type {
+  }
+  string field {
+  }
+  string timeTracking {
+  }
+}
