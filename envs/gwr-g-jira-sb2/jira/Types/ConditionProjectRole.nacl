@@ -1,4 +1,0 @@
-type jira.ConditionProjectRole {
-  string id {
-  }
-}

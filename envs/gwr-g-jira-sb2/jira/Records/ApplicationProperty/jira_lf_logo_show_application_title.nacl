@@ -1,6 +1,0 @@
-jira.ApplicationProperty jira_lf_logo_show_application_title@v {
-  id = "jira.lf.logo.show.application.title"
-  value = "false"
-  name = "jira.lf.logo.show.application.title"
-  type = "boolean"
-}

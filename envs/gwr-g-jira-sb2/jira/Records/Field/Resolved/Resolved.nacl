@@ -1,9 +1,0 @@
-
-jira.Field Resolved__datetime {
-  name = "Resolved"
-  schema = {
-    type = "datetime"
-    system = "resolutiondate"
-  }
-  description = ""
-}

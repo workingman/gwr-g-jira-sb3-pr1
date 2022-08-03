@@ -1,8 +1,0 @@
-type jira.IssueSecurityLevelMember {
-  serviceid_number id {
-  }
-  number issueSecurityLevelId {
-  }
-  jira.PermissionHolder holder {
-  }
-}

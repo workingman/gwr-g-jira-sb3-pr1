@@ -1,8 +1,0 @@
-type jira.StatusMigration {
-  string issueTypeId {
-  }
-  string statusId {
-  }
-  string newStatusId {
-  }
-}

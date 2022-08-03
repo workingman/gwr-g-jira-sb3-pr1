@@ -1,9 +1,0 @@
-
-jira.Field Time_Spent__number@suu {
-  name = "Time Spent"
-  schema = {
-    type = "number"
-    system = "timespent"
-  }
-  description = ""
-}

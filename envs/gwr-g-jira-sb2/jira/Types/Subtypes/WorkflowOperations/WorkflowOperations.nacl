@@ -1,6 +1,0 @@
-type jira.WorkflowOperations {
-  boolean canEdit {
-  }
-  boolean canDelete {
-  }
-}

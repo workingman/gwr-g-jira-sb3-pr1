@@ -1,7 +1,0 @@
-jira.Status Open {
-  description = "The issue is open and ready for the assignee to start work on it."
-  iconUrl = "/images/icons/statuses/open.png"
-  name = "Open"
-  untranslatedName = "Open"
-  statusCategory = jira.StatusCategory.instance.To_Do@s
-}

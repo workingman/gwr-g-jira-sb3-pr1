@@ -1,6 +1,0 @@
-type jira.AutomationTag {
-  string tagType {
-  }
-  string tagValue {
-  }
-}

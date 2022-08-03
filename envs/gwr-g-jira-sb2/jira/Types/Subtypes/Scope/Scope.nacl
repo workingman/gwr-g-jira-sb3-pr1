@@ -1,8 +1,0 @@
-type jira.Scope {
-  string type {
-  }
-  jira.ProjectDetails project {
-  }
-  "Map<unknown>" additionalProperties {
-  }
-}

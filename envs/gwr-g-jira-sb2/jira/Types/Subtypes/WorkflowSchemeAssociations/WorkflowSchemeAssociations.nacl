@@ -1,6 +1,0 @@
-type jira.WorkflowSchemeAssociations {
-  "List<string>" projectIds {
-  }
-  jira.WorkflowScheme workflowScheme {
-  }
-}

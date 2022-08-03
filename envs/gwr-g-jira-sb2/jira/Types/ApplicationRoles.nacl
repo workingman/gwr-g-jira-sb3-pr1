@@ -1,4 +1,0 @@
-type jira.ApplicationRoles {
-  "List<jira.ApplicationRole>" items {
-  }
-}

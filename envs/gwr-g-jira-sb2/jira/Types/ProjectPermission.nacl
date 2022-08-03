@@ -1,4 +1,0 @@
-type jira.ProjectPermission {
-  string id {
-  }
-}

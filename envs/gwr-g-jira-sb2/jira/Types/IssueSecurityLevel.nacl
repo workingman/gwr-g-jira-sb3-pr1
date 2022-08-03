@@ -1,4 +1,0 @@
-type jira.IssueSecurityLevel {
-  string id {
-  }
-}

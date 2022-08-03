@@ -1,6 +1,0 @@
-type jira.IssueTypeSchemeMapping {
-  string issueTypeSchemeId {
-  }
-  string issueTypeId {
-  }
-}

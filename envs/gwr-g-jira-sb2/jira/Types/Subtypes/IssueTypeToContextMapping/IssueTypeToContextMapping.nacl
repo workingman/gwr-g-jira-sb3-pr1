@@ -1,8 +1,0 @@
-type jira.IssueTypeToContextMapping {
-  string contextId {
-  }
-  string issueTypeId {
-  }
-  boolean isAnyIssueType {
-  }
-}

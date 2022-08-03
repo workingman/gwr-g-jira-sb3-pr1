@@ -1,9 +1,0 @@
-type jira.WorkflowStatus {
-  serviceid id {
-  }
-  string name {
-  }
-  "List<jira.StatusProperty>" properties {
-    _required = true
-  }
-}

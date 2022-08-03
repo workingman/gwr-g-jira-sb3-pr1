@@ -1,4 +1,0 @@
-type jira.ContainerOfWorkflowSchemeAssociations {
-  "List<jira.WorkflowSchemeAssociations>" values {
-  }
-}

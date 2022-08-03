@@ -1,7 +1,0 @@
-jira.ScreenScheme GWR1053__Kanban_Bug_Screen_Scheme@fssss {
-  name = "GWR1053: Kanban Bug Screen Scheme"
-  description = ""
-  screens = {
-    default = jira.Screen.instance.GWR1053__Kanban_Bug_Screen@fsss
-  }
-}

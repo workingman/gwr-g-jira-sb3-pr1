@@ -1,9 +1,0 @@
-
-jira.Field Remaining_Estimate__number@suu {
-  name = "Remaining Estimate"
-  schema = {
-    type = "number"
-    system = "timeestimate"
-  }
-  description = ""
-}

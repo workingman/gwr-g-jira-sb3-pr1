@@ -1,4 +1,0 @@
-type jira.Statuses {
-  "List<jira.Status>" items {
-  }
-}

@@ -1,4 +1,0 @@
-type jira.DashboardGadgetResponse {
-  "List<jira.DashboardGadget>" gadgets {
-  }
-}

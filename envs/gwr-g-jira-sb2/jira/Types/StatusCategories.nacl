@@ -1,4 +1,0 @@
-type jira.StatusCategories {
-  "List<jira.StatusCategory>" items {
-  }
-}

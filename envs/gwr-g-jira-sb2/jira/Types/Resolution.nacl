@@ -1,9 +1,0 @@
-type jira.Resolution {
-  serviceid id {
-    _hidden_value = true
-  }
-  string description {
-  }
-  string name {
-  }
-}

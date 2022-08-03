@@ -1,4 +1,0 @@
-type jira.PermissionSchemes {
-  "List<jira.PermissionScheme>" permissionSchemes {
-  }
-}

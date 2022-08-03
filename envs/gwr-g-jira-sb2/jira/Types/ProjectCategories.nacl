@@ -1,4 +1,0 @@
-type jira.ProjectCategories {
-  "List<jira.ProjectCategory>" items {
-  }
-}

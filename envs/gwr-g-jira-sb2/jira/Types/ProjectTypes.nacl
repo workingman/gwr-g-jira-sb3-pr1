@@ -1,4 +1,0 @@
-type jira.ProjectTypes {
-  "List<jira.ProjectType>" items {
-  }
-}

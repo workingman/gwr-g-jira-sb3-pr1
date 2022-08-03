@@ -1,4 +1,0 @@
-type jira.Permissions {
-  jira.Permissions_permissions permissions {
-  }
-}

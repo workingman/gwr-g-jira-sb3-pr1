@@ -1,6 +1,0 @@
-type jira.IssueTypeSchemeProjects {
-  jira.IssueTypeScheme issueTypeScheme {
-  }
-  "List<string>" projectIds {
-  }
-}

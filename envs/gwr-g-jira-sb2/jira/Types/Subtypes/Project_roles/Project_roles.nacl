@@ -1,4 +1,0 @@
-type jira.Project_roles {
-  "Map<string>" additionalProperties {
-  }
-}

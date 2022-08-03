@@ -1,9 +1,0 @@
-
-jira.Field Time_tracking__timetracking@suu {
-  name = "Time tracking"
-  schema = {
-    type = "timetracking"
-    system = "timetracking"
-  }
-  description = ""
-}

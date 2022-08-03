@@ -1,4 +1,0 @@
-type jira.Priorities {
-  "List<jira.Priority>" items {
-  }
-}

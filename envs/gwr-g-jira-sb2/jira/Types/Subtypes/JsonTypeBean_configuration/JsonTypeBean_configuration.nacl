@@ -1,4 +1,0 @@
-type jira.JsonTypeBean_configuration {
-  "Map<unknown>" additionalProperties {
-  }
-}

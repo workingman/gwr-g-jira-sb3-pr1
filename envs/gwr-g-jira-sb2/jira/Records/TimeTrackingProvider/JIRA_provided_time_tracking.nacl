@@ -1,4 +1,0 @@
-jira.TimeTrackingProvider JIRA_provided_time_tracking@s {
-  key = "JIRA"
-  name = "JIRA provided time tracking"
-}

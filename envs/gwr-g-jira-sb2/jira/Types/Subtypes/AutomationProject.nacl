@@ -1,6 +1,0 @@
-type jira.AutomationProject {
-  string projectId {
-  }
-  string projectTypeKey {
-  }
-}

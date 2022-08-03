@@ -1,9 +1,0 @@
-
-jira.Field Assignee__user {
-  name = "Assignee"
-  schema = {
-    type = "user"
-    system = "assignee"
-  }
-  description = ""
-}

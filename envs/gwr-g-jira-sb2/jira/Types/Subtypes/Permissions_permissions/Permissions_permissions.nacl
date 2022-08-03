@@ -1,4 +1,0 @@
-settings jira.Permissions_permissions {
-  "Map<jira.UserPermission>" additionalProperties {
-  }
-}

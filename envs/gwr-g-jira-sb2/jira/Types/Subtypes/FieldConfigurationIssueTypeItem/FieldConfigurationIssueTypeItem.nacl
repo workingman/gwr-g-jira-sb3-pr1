@@ -1,8 +1,0 @@
-type jira.FieldConfigurationIssueTypeItem {
-  string fieldConfigurationSchemeId {
-  }
-  string issueTypeId {
-  }
-  string fieldConfigurationId {
-  }
-}

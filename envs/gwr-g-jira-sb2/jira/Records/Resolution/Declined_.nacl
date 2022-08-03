@@ -1,4 +1,0 @@
-jira.Resolution Declined_ {
-  description = "This issue was not approved."
-  name = "Declined_"
-}

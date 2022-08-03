@@ -1,4 +1,0 @@
-type jira.rest__api__3__filter___id___columns@uuuuuuuu_00123_00125uu {
-  "List<jira.ColumnItem>" items {
-  }
-}

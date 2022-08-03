@@ -1,6 +1,0 @@
-type jira.GroupName {
-  string name {
-  }
-  string groupId {
-  }
-}

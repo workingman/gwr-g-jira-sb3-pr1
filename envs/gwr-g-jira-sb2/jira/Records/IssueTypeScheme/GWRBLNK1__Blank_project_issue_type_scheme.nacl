@@ -1,8 +1,0 @@
-jira.IssueTypeScheme GWRBLNK1__Blank_project_issue_type_scheme@fsssss {
-  name = "GWRBLNK1: Blank project issue type scheme"
-  defaultIssueTypeId = jira.IssueType.instance.Task
-  issueTypeIds = [
-    jira.IssueType.instance.Task,
-    jira.IssueType.instance.Sub_task@b,
-  ]
-}

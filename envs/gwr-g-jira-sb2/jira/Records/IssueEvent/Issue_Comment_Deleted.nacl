@@ -1,3 +1,0 @@
-jira.IssueEvent Issue_Comment_Deleted@s {
-  name = "Issue Comment Deleted"
-}

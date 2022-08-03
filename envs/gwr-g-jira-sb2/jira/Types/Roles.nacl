@@ -1,4 +1,0 @@
-type jira.Roles {
-  "List<jira.ProjectRole>" items {
-  }
-}

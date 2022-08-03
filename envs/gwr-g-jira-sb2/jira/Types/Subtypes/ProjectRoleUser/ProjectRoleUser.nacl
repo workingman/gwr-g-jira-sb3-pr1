@@ -1,6 +1,0 @@
-type jira.ProjectRoleUser {
-  string accountId {
-  }
-  "Map<unknown>" additionalProperties {
-  }
-}

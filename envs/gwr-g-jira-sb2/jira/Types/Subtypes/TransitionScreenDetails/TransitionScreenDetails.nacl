@@ -1,6 +1,0 @@
-type jira.TransitionScreenDetails {
-  serviceid id {
-  }
-  string name {
-  }
-}

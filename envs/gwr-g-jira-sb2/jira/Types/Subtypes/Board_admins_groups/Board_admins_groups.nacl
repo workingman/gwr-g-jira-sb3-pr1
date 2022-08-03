@@ -1,4 +1,0 @@
-type jira.Board_admins_groups {
-  string name {
-  }
-}

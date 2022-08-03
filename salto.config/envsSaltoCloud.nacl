@@ -5,10 +5,6 @@ envs {
       folderName = "gwr-g-jira-pr1"
     },
     {
-      uuid = "24a4b4e0-ca67-444d-aa7d-a429603efe1a"
-      folderName = "gwr-g-jira-sb2"
-    },
-    {
       uuid = "d230eace-8825-4593-8ac0-0fda51311320"
       folderName = "gwr-g-jira-sb3"
     },

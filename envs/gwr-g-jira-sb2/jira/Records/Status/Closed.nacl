@@ -1,7 +1,0 @@
-jira.Status Closed {
-  description = "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened."
-  iconUrl = "/images/icons/statuses/closed.png"
-  name = "Closed"
-  untranslatedName = "Closed"
-  statusCategory = jira.StatusCategory.instance.Done
-}

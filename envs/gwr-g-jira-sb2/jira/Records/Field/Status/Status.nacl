@@ -1,9 +1,0 @@
-
-jira.Field Status__status {
-  name = "Status"
-  schema = {
-    type = "status"
-    system = "status"
-  }
-  description = ""
-}

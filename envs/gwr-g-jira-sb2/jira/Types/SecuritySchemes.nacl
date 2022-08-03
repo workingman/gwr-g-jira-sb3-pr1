@@ -1,4 +1,0 @@
-type jira.SecuritySchemes {
-  "List<jira.SecurityScheme>" issueSecuritySchemes {
-  }
-}

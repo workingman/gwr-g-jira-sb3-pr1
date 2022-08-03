@@ -1,4 +1,0 @@
-type jira.WebhookFilters {
-  string issue_related_events_section {
-  }
-}

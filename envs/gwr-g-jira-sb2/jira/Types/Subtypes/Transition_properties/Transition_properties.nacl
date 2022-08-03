@@ -1,4 +1,0 @@
-type jira.Transition_properties {
-  "Map<unknown>" additionalProperties {
-  }
-}

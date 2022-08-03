@@ -1,6 +1,0 @@
-type jira.PostFunction {
-  string type {
-  }
-  jira.PostFunctionConfiguration configuration {
-  }
-}

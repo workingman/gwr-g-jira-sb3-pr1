@@ -1,8 +1,0 @@
-type jira.CustomFieldContextProjectMapping {
-  string contextId {
-  }
-  string projectId {
-  }
-  boolean isGlobalContext {
-  }
-}

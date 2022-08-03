@@ -1,6 +1,0 @@
-type jira.Validator {
-  string type {
-  }
-  jira.ValidatorConfiguration configuration {
-  }
-}

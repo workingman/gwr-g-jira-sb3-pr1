@@ -1,8 +1,0 @@
-type jira.NotificationSchemeEvent {
-  jira.NotificationEvent event {
-  }
-  "List<jira.PermissionHolder>" notifications {
-  }
-  number eventType {
-  }
-}

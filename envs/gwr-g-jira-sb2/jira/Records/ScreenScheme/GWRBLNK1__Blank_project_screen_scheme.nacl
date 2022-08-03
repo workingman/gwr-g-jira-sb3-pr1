@@ -1,8 +1,0 @@
-jira.ScreenScheme GWRBLNK1__Blank_project_screen_scheme@fssss {
-  name = "GWRBLNK1: Blank project screen scheme"
-  description = ""
-  screens = {
-    default = jira.Screen.instance.GWRBLNK1__Blank_project_edit_view_issue_screen@fsssdss
-    create = jira.Screen.instance.GWRBLNK1__Blank_project_create_issue_screen@fsssss
-  }
-}

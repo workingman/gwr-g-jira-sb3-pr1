@@ -1,4 +1,0 @@
-type jira.BoardConfiguration_ranking {
-  number rankCustomFieldId {
-  }
-}

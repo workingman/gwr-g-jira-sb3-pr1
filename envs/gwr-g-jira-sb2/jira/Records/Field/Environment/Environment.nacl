@@ -1,9 +1,0 @@
-
-jira.Field Environment__string {
-  name = "Environment"
-  schema = {
-    type = "string"
-    system = "environment"
-  }
-  description = ""
-}

@@ -1,4 +1,0 @@
-type jira.WorkflowScheme_originalIssueTypeMappings {
-  "Map<string>" additionalProperties {
-  }
-}

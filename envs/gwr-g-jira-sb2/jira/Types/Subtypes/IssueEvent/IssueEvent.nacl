@@ -1,7 +1,0 @@
-type jira.IssueEvent {
-  serviceid_number id {
-    _hidden_value = true
-  }
-  string name {
-  }
-}
