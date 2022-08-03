@@ -4,4 +4,5 @@ jira.Status QA {
   name = "QA"
   
   
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
 }

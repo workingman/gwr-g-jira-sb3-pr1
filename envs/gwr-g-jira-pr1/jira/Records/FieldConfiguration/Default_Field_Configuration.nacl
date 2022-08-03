@@ -288,3 +288,32 @@ jira.FieldConfiguration Default_Field_Configuration@s {
 }
 
 
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_Category__select__c_suuuu@uumuuuuuum {
+  id = jira.Field.instance.GWR_Category__select__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_criticality__textfield__c_suuuu@uumuuuuuum {
+  id = jira.Field.instance.GWR_criticality__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_text1__textfield__c_suuuu@uumuuuuuum {
+  id = jira.Field.instance.GWR_text1__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}

@@ -1,17 +1,15 @@
 type jira.Status {
   string description {
   }
-  string iconUrl {
-  }
+  
   string name {
   }
   serviceid id {
     _hidden_value = true
   }
-  jira.StatusCategory statusCategory {
+  string statusCategory {
   }
   "Map<unknown>" additionalProperties {
   }
-  string untranslatedName {
-  }
+  
 }

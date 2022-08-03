@@ -1,0 +1,47 @@
+jira.Filter created_last_7_days@s {
+  name = "created last 7 days"
+  owner = "Geoffrey Routledge"
+  jql = "status in (Backlog, Done, \"In Progress\") AND created >= -7d ORDER BY created DESC"
+  _generated_dependencies = [
+    {
+      reference = jira.Field.instance.Created
+      occurrences = [
+        {
+          location = jira.Filter.instance.created_last_7_days@s.jql
+        },
+      ]
+    },
+    {
+      reference = jira.Field.instance.Status
+      occurrences = [
+        {
+          location = jira.Filter.instance.created_last_7_days@s.jql
+        },
+      ]
+    },
+    {
+      reference = jira.Status.instance.Backlog
+      occurrences = [
+        {
+          location = jira.Filter.instance.created_last_7_days@s.jql
+        },
+      ]
+    },
+    {
+      reference = jira.Status.instance.Done
+      occurrences = [
+        {
+          location = jira.Filter.instance.created_last_7_days@s.jql
+        },
+      ]
+    },
+    {
+      reference = jira.Status.instance.In_Progress@s
+      occurrences = [
+        {
+          location = jira.Filter.instance.created_last_7_days@s.jql
+        },
+      ]
+    },
+  ]
+}

@@ -1,0 +1,57 @@
+jira.Automation Created_in_Prod__GWR_HR_App@sssuss {
+  name = "Created in Prod "
+  state = "ENABLED"
+  authorAccountId = "61980f073618cd006f48823b"
+  actor = {
+    type = "ACCOUNT_ID"
+    value = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Status
+        }
+        selectedFieldType = "status"
+        comparison = "ONE_OF"
+        compareValue = {
+          type = "NAME"
+          value = "[\"Backlog\"]"
+          multiValue = true
+        }
+      }
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment"
+      value = {
+        comment = "This is a backlog item"
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.GWR_HR_App@s
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+}

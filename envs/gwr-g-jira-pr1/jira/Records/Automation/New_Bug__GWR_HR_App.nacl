@@ -1,0 +1,63 @@
+jira.Automation New_Bug__GWR_HR_App@ssuss {
+  name = "New Bug "
+  state = "ENABLED"
+  authorAccountId = "61980f073618cd006f48823b"
+  actor = {
+    type = "ACCOUNT_ID"
+    value = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Issue_Type@s
+        }
+        selectedFieldType = "issuetype"
+        comparison = "EQUALS"
+        compareValue = {
+          type = "ID"
+          value = "10004"
+          multiValue = false
+        }
+      }
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment"
+      value = {
+        comment = "This is a new bug"
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.GWR_HR_App@s
+    },
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+}

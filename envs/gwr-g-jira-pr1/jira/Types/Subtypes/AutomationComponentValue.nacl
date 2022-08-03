@@ -1,0 +1,44 @@
+type jira.AutomationComponentValue {
+  number boardId {
+  }
+  "List<string>" linkTypes {
+  }
+  string linkType {
+  }
+  string sourceProject {
+  }
+  string targetProject {
+  }
+  "List<string>" groups {
+  }
+  jira.AutomationGroup group {
+  }
+  "List<jira.AutomationOperation>" operations {
+  }
+  "List<jira.AutomationField>" fields {
+  }
+  jira.AutomationField selectedField {
+  }
+  "List<jira.AutomationStatus>" fromStatus {
+  }
+  "List<jira.AutomationStatus>" toStatus {
+  }
+  jira.AutomationStatus destinationStatus {
+  }
+  "List<jira.AutomationEmailRecipent>" to {
+  }
+  "List<jira.AutomationEmailRecipent>" cc {
+  }
+  "List<jira.AutomationEmailRecipent>" bcc {
+  }
+  "List<jira.AutomationCondition>" conditions {
+  }
+  jira.AutomationGroup visibility {
+  }
+  "List<jira.AutomationSubtask>" subtasks {
+  }
+  jira.AutomationProject project {
+  }
+  jira.AutomationRole role {
+  }
+}
