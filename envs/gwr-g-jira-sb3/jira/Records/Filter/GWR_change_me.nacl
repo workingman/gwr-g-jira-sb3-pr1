@@ -1,0 +1,8 @@
+jira.Filter GWR_change_me@s {
+  name = "GWR change me"
+  owner = {
+    id = "61980f073618cd006f48823b"
+    displayName = "Geoffrey Routledge"
+  }
+  jql = "\"${ jira.Field.instance.GWR_Category__select__c@suuuu.name }[Dropdown]\" = Green ORDER BY ${ jira.Field.instance.Created } DESC"
+}

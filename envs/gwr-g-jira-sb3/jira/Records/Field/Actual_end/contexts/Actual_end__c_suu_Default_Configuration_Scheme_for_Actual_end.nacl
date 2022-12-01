@@ -8,4 +8,5 @@ jira.CustomFieldContext Actual_end__c_suu_Default_Configuration_Scheme_for_Actua
   _parent = [
     jira.Field.instance.Actual_end__c@suu,
   ]
+  isGlobalContext = true
 }

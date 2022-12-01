@@ -3,4 +3,6 @@ type jira.AutomationProject {
   }
   string projectTypeKey {
   }
+  string value {
+  }
 }

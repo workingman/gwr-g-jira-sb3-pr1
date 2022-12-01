@@ -1,7 +1,7 @@
 type jira.FilterSubscription {
   serviceid_number id {
   }
-  string user {
+  jira.AccountIdInfo user {
   }
   jira.GroupName group {
   }

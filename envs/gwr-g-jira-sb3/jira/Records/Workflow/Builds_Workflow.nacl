@@ -24,13 +24,27 @@ jira.Workflow Builds_Workflow@s {
           type = "OnlyBambooNotificationsCondition"
         }
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "com.atlassian.studio.jira.status.buildFailed.title"
+        },
+        {
+          key = "build.failed.transition"
+          value = "true"
+        },
+      ]
     },
     {
       name = "Build Passed"
       description = "The build has passed"
       from = [
-        jira.Status.instance.Building,
         jira.Status.instance.Build_Broken@s,
+        jira.Status.instance.Building,
       ]
       to = jira.Status.instance.Resolved
       type = "directed"
@@ -49,16 +63,34 @@ jira.Workflow Builds_Workflow@s {
           type = "OnlyBambooNotificationsCondition"
         }
       }
+      properties = [
+        {
+          key = "build.passed.resolution"
+          value = "fixed"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "com.atlassian.studio.jira.status.buildPassed.title"
+        },
+        {
+          key = "build.passed.transition"
+          value = "true"
+        },
+      ]
     },
     {
       name = "Close Issue"
       description = ""
       from = [
-        jira.Status.instance.Open,
-        jira.Status.instance.In_Progress@s,
-        jira.Status.instance.Reopened,
-        jira.Status.instance.Building,
         jira.Status.instance.Build_Broken@s,
+        jira.Status.instance.Building,
+        jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Open,
+        jira.Status.instance.Reopened,
       ]
       to = jira.Status.instance.Closed
       type = "directed"
@@ -79,18 +111,36 @@ jira.Workflow Builds_Workflow@s {
             {
               type = "PermissionCondition"
               configuration = {
-                permissionKey = "RESOLVE_ISSUES"
+                permissionKey = "CLOSE_ISSUES"
               }
             },
             {
               type = "PermissionCondition"
               configuration = {
-                permissionKey = "CLOSE_ISSUES"
+                permissionKey = "RESOLVE_ISSUES"
               }
             },
           ]
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "closeissue.close"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "commit.command.mapping"
+          value = "close"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "closeissue.title"
+        },
+      ]
     },
     {
       name = "Close Issue"
@@ -118,6 +168,24 @@ jira.Workflow Builds_Workflow@s {
           }
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "closeissue.close"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "commit.command.mapping"
+          value = "close"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "closeissue.title"
+        },
+      ]
     },
     {
       name = "Create Issue"
@@ -144,31 +212,44 @@ jira.Workflow Builds_Workflow@s {
           },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "common.forms.create"
+        },
+      ]
     },
     {
       name = "Reopen Issue"
       description = ""
       from = [
-        jira.Status.instance.Resolved,
         jira.Status.instance.Closed,
+        jira.Status.instance.Resolved,
       ]
       to = jira.Status.instance.Reopened
       type = "directed"
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Issue_Reopened@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -179,16 +260,34 @@ jira.Workflow Builds_Workflow@s {
           }
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "issue.operations.reopen.issue"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "commit.command.mapping"
+          value = "reopen"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "issue.operations.reopen.issue"
+        },
+      ]
     },
     {
       name = "Resolve Issue"
       description = ""
       from = [
-        jira.Status.instance.Open,
-        jira.Status.instance.In_Progress@s,
-        jira.Status.instance.Reopened,
-        jira.Status.instance.Building,
         jira.Status.instance.Build_Broken@s,
+        jira.Status.instance.Building,
+        jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Open,
+        jira.Status.instance.Reopened,
       ]
       to = jira.Status.instance.Resolved
       type = "directed"
@@ -210,32 +309,53 @@ jira.Workflow Builds_Workflow@s {
           }
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "resolveissue.resolve"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "commit.command.mapping"
+          value = "resolve"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "resolveissue.title"
+        },
+      ]
     },
     {
       name = "Start Progress"
       description = ""
       from = [
+        jira.Status.instance.Build_Broken@s,
         jira.Status.instance.Open,
         jira.Status.instance.Reopened,
-        jira.Status.instance.Build_Broken@s,
       ]
       to = jira.Status.instance.In_Progress@s
       type = "directed"
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Work_Started_On_Issue@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -243,6 +363,20 @@ jira.Workflow Builds_Workflow@s {
           type = "AllowOnlyAssignee"
         }
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "commit.command.mapping"
+          value = "start"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "startprogress.title"
+        },
+      ]
     },
     {
       name = "Stop Progress"
@@ -255,18 +389,21 @@ jira.Workflow Builds_Workflow@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Work_Stopped_On_Issue@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -274,15 +411,29 @@ jira.Workflow Builds_Workflow@s {
           type = "AllowOnlyAssignee"
         }
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "commit.command.mapping"
+          value = "stop"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "stopprogress.title"
+        },
+      ]
     },
     {
       name = "Wait for Build"
       description = "Wait for Bamboo to build the code for this issue"
       from = [
-        jira.Status.instance.Open,
-        jira.Status.instance.In_Progress@s,
-        jira.Status.instance.Reopened,
         jira.Status.instance.Build_Broken@s,
+        jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Open,
+        jira.Status.instance.Reopened,
       ]
       to = jira.Status.instance.Building
       type = "directed"
@@ -298,6 +449,20 @@ jira.Workflow Builds_Workflow@s {
           },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "commit.command.mapping"
+          value = "build"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "com.atlassian.studio.jira.status.waitForBuild.title"
+        },
+      ]
     },
   ]
   statuses = [

@@ -7,4 +7,5 @@ jira.CustomFieldContext Epic_Color__c_suu_Default_Configuration_Scheme_for_Epic_
   _parent = [
     jira.Field.instance.Epic_Color__c@suu,
   ]
+  isGlobalContext = true
 }

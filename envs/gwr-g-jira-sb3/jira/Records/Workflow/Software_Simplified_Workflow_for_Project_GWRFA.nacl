@@ -9,22 +9,35 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
             }
           },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "gh.workflow.preset.backlog"
+        },
+      ]
     },
     {
       name = "Create"
@@ -51,6 +64,16 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
           },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "common.forms.create"
+        },
+      ]
     },
     {
       name = "Done"
@@ -60,22 +83,35 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = "10000"
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
             }
           },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = jira.Resolution.instance.Done
+            }
+          },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "gh.workflow.preset.done"
+        },
+      ]
     },
     {
       name = "In Progress"
@@ -85,22 +121,35 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
             }
           },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "gh.workflow.preset.inprogress"
+        },
+      ]
     },
     {
       name = "QA"
@@ -110,22 +159,31 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
             }
           },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
     },
     {
       name = "Selected for Development"
@@ -135,22 +193,35 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
             }
           },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "gh.workflow.preset.selected"
+        },
+      ]
     },
     {
       name = "Validating"
@@ -160,22 +231,31 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
             }
           },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
+            }
+          },
         ]
       }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
     },
   ]
   statuses = [

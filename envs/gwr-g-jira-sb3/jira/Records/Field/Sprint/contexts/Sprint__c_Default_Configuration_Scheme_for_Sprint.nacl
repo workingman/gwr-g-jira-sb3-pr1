@@ -4,4 +4,5 @@ jira.CustomFieldContext Sprint__c_Default_Configuration_Scheme_for_Sprint@uuusss
   _parent = [
     jira.Field.instance.Sprint__c,
   ]
+  isGlobalContext = true
 }

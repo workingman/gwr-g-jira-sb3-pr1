@@ -4,4 +4,5 @@ jira.CustomFieldContext Target_start__c_suu_Default_Configuration_Scheme_for_Tar
   _parent = [
     jira.Field.instance.Target_start__c@suu,
   ]
+  isGlobalContext = true
 }

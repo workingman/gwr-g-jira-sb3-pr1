@@ -4,4 +4,8 @@ type jira.IssueEvent {
   }
   string name {
   }
+  string templateName {
+  }
+  string description {
+  }
 }

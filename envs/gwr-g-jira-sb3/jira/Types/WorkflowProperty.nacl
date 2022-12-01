@@ -1,0 +1,6 @@
+type jira.WorkflowProperty {
+  string key {
+  }
+  unknown value {
+  }
+}

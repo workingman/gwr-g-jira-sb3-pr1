@@ -4,4 +4,5 @@ jira.CustomFieldContext Request_participants__sd_request_participants__c_suubbuu
   _parent = [
     jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu,
   ]
+  isGlobalContext = true
 }

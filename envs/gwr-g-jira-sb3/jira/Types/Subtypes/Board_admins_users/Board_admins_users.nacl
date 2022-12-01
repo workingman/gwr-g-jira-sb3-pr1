@@ -7,7 +7,7 @@ type jira.Board_admins_users {
   }
   boolean active {
   }
-  string accountId {
+  jira.AccountIdInfo accountId {
   }
   jira.Board_admins_users_avatarUrls avatarUrls {
   }

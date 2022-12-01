@@ -7,4 +7,5 @@ jira.CustomFieldContext GWR_text1__c_suu_Default_Configuration_Scheme_for_GWR_te
   _parent = [
     jira.Field.instance.GWR_text1__c@suu,
   ]
+  isGlobalContext = true
 }

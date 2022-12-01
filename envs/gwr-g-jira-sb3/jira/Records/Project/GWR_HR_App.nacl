@@ -2,21 +2,20 @@ jira.Project GWR_HR_App@s {
   key = "GWRHA"
   description = ""
   name = "GWR HR App"
-  projectKeys = [
-    "GWRHA",
-  ]
+  
   projectTypeKey = "software"
-  simplified = false
-  style = "classic"
-  isPrivate = false
-  permissions = {
-    canEdit = true
-  }
+  
+  
+  
+  
   workflowScheme = jira.WorkflowScheme.instance.GWRHA__Software_Simplified_Workflow_Scheme@fssss
   // permissionScheme = jira.PermissionScheme.instance.GWRHA_software_permission_scheme@s
   notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
   issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.GWRHA__Kanban_Issue_Type_Screen_Scheme@fsssss
   issueTypeScheme = jira.IssueTypeScheme.instance.GWRHA__Kanban_Issue_Type_Scheme@fssss
-  leadAccountId = "61980f073618cd006f48823b"
+  leadAccountId = {
+    id = "61980f073618cd006f48823b"
+    displayName = "Geoffrey Routledge"
+  }
   permissionScheme = jira.PermissionScheme.instance.GWRHA_software_permission_scheme@s
 }
