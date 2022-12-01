@@ -3,7 +3,10 @@ jira.Board GWRHA_board@s {
   type = "kanban"
   admins = {
     users = [
-      "Geoffrey Routledge",
+      {
+        id = "61980f073618cd006f48823b"
+        displayName = "Geoffrey Routledge"
+      },
     ]
   }
   location = {

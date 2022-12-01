@@ -1,5 +1,5 @@
 type jira.ProjectRoleUser {
-  string accountId {
+  jira.AccountIdInfo accountId {
   }
   "Map<unknown>" additionalProperties {
   }

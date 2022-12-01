@@ -31,17 +31,17 @@ jira.ProjectRole atlassian_addons_project_access@b {
       }
     },
     {
-      displayName = "Microsoft Teams for Jira Cloud"
-      type = "atlassian-user-role-actor"
-      actorUser = {
-        accountId = "60e5a86a471e61006a4c51fd"
-      }
-    },
-    {
       displayName = "Automation for Jira"
       type = "atlassian-user-role-actor"
       actorUser = {
         accountId = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      }
+    },
+    {
+      displayName = "Microsoft Teams for Jira Cloud"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = "60e5a86a471e61006a4c51fd"
       }
     },
     {

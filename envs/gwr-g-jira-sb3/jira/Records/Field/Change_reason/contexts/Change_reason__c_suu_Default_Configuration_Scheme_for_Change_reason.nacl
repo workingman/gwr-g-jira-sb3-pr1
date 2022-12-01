@@ -34,4 +34,5 @@ jira.CustomFieldContext Change_reason__c_suu_Default_Configuration_Scheme_for_Ch
   _parent = [
     jira.Field.instance.Change_reason__c@suu,
   ]
+  isGlobalContext = true
 }

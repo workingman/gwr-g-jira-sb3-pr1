@@ -5,8 +5,8 @@ jira.Workflow jira {
       name = "Close Issue"
       description = ""
       from = [
-        jira.Status.instance.Open,
         jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Open,
         jira.Status.instance.Reopened,
       ]
       to = jira.Status.instance.Closed
@@ -28,18 +28,36 @@ jira.Workflow jira {
             {
               type = "PermissionCondition"
               configuration = {
-                permissionKey = "RESOLVE_ISSUES"
+                permissionKey = "CLOSE_ISSUES"
               }
             },
             {
               type = "PermissionCondition"
               configuration = {
-                permissionKey = "CLOSE_ISSUES"
+                permissionKey = "RESOLVE_ISSUES"
               }
             },
           ]
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "closeissue.close"
+        },
+        {
+          key = "opsbar-sequence"
+          value = "60"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "closeissue.title"
+        },
+      ]
     },
     {
       name = "Close Issue"
@@ -67,6 +85,24 @@ jira.Workflow jira {
           }
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "closeissue.close"
+        },
+        {
+          key = "opsbar-sequence"
+          value = "60"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "closeissue.title"
+        },
+      ]
     },
     {
       name = "Create Issue"
@@ -93,31 +129,48 @@ jira.Workflow jira {
           },
         ]
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "0"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "common.forms.create"
+        },
+      ]
     },
     {
       name = "Reopen Issue"
       description = ""
       from = [
-        jira.Status.instance.Resolved,
         jira.Status.instance.Closed,
+        jira.Status.instance.Resolved,
       ]
       to = jira.Status.instance.Reopened
       type = "directed"
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Issue_Reopened@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -128,13 +181,31 @@ jira.Workflow jira {
           }
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "issue.operations.reopen.issue"
+        },
+        {
+          key = "opsbar-sequence"
+          value = "80"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "issue.operations.reopen.issue"
+        },
+      ]
     },
     {
       name = "Resolve Issue"
       description = ""
       from = [
-        jira.Status.instance.Open,
         jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Open,
         jira.Status.instance.Reopened,
       ]
       to = jira.Status.instance.Resolved
@@ -157,6 +228,24 @@ jira.Workflow jira {
           }
         }
       }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "resolveissue.resolve"
+        },
+        {
+          key = "opsbar-sequence"
+          value = "40"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "resolveissue.title"
+        },
+      ]
     },
     {
       name = "Start Progress"
@@ -170,14 +259,8 @@ jira.Workflow jira {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "AssignToCurrentUserFunction"
+            
           },
           {
             type = "FireIssueEventFunction"
@@ -185,6 +268,14 @@ jira.Workflow jira {
               event = {
                 id = jira.IssueEvent.instance.Work_Started_On_Issue@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -195,6 +286,20 @@ jira.Workflow jira {
           }
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "20"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "startprogress.title"
+        },
+      ]
     },
     {
       name = "Stop Progress"
@@ -207,18 +312,21 @@ jira.Workflow jira {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Work_Stopped_On_Issue@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -229,6 +337,20 @@ jira.Workflow jira {
           }
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "20"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "stopprogress.title"
+        },
+      ]
     },
   ]
   statuses = [

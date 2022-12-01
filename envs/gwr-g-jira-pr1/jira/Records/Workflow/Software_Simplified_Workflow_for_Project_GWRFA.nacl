@@ -9,18 +9,21 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -60,18 +63,21 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = "10000"
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = "10000"
             }
           },
         ]
@@ -85,18 +91,21 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -110,18 +119,21 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       rules = {
         postFunctions = [
           {
-            type = "UpdateIssueFieldFunction"
-            configuration = {
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
-            }
-          },
-          {
             type = "FireIssueEventFunction"
             configuration = {
+              
+              
               event = {
                 id = jira.IssueEvent.instance.Generic_Event@s
               }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
         ]
@@ -132,6 +144,16 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
     {
       id = jira.Status.instance.Backlog
       name = "Backlog"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.Selected_for_Development@s
+      name = "Selected for Development"
       properties = [
         {
           key = "jira.issue.editable"
@@ -152,16 +174,6 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
     {
       id = jira.Status.instance.In_Progress@s
       name = "In Progress"
-      properties = [
-        {
-          key = "jira.issue.editable"
-          value = "true"
-        },
-      ]
-    },
-    {
-      id = jira.Status.instance.Selected_for_Development@s
-      name = "Selected for Development"
       properties = [
         {
           key = "jira.issue.editable"

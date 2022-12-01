@@ -174,7 +174,11 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_Resolution@uumu {
 }
 jira.FieldConfigurationItem Default_Field_Configuration_s_Time_tracking_s@uumuum {
   id = jira.Field.instance.Time_tracking@s
-  description = "An estimate of how much work remains until this issue will be resolved.<br>The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number)<br>Examples: 4d, 5h 30m, 60m and 3w.<br>"
+  description = '''
+An estimate of how much work remains until this issue will be resolved.
+The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number).
+Examples: 4d, 5h 30m, 60m and 3w.
+'''
   isHidden = false
   isRequired = false
   _parent = [
@@ -310,6 +314,51 @@ jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_criticality__textf
   isHidden = false
   isRequired = false
   renderer = "text-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_Index_20220926a__float__c_ssuuuu@uumuuuuuuum {
+  id = jira.Field.instance.GWR_Index_20220926a__float__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_Rating__float__c_suuuu@uumuuuuuum {
+  id = jira.Field.instance.GWR_Rating__float__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_Volume_20220830__float__c_ssuuuu@uumuuuuuuum {
+  id = jira.Field.instance.GWR_Volume_20220830__float__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_chkbx1__multicheckboxes__c_suuuu@uumuuuuuum {
+  id = jira.Field.instance.GWR_chkbx1__multicheckboxes__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Default_Field_Configuration@s,
+  ]
+}
+jira.FieldConfigurationItem Default_Field_Configuration_s_GWR_chkbx2__multicheckboxes__c_suuuu@uumuuuuuum {
+  id = jira.Field.instance.GWR_chkbx2__multicheckboxes__c@suuuu
+  isHidden = false
+  isRequired = false
   description = ""
   _parent = [
     jira.FieldConfiguration.instance.Default_Field_Configuration@s,

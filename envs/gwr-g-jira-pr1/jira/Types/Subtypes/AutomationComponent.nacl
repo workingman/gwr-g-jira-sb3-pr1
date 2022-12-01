@@ -9,4 +9,6 @@ type jira.AutomationComponent {
   }
   "List<jira.AutomationComponent>" children {
   }
+  "List<jira.AutomationComponent>" conditions {
+  }
 }

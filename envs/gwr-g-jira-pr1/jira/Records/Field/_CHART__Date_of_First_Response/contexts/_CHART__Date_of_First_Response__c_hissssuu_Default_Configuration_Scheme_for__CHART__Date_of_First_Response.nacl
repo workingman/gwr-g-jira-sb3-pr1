@@ -4,4 +4,5 @@ jira.CustomFieldContext _CHART__Date_of_First_Response__c_hissssuu_Default_Confi
   _parent = [
     jira.Field.instance._CHART__Date_of_First_Response__c@hissssuu,
   ]
+  isGlobalContext = true
 }

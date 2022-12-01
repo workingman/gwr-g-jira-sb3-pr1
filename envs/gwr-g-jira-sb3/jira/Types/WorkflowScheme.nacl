@@ -14,7 +14,7 @@ type jira.WorkflowScheme {
   }
   boolean draft {
   }
-  string lastModifiedUser {
+  jira.AccountIdInfo lastModifiedUser {
   }
   string lastModified {
   }

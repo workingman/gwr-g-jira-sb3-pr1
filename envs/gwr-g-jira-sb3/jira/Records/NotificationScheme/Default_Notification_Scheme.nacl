@@ -13,21 +13,7 @@ jira.NotificationScheme Default_Notification_Scheme@s {
           type = "Reporter"
         },
       ]
-      eventType = jira.IssueEvent.instance.Issue_Created@s
-    },
-    {
-      notifications = [
-        {
-          type = "AllWatchers"
-        },
-        {
-          type = "CurrentAssignee"
-        },
-        {
-          type = "Reporter"
-        },
-      ]
-      eventType = jira.IssueEvent.instance.Issue_Updated@s
+      eventType = jira.IssueEvent.instance.Generic_Event@s
     },
     {
       notifications = [
@@ -55,7 +41,7 @@ jira.NotificationScheme Default_Notification_Scheme@s {
           type = "Reporter"
         },
       ]
-      eventType = jira.IssueEvent.instance.Issue_Resolved@s
+      eventType = jira.IssueEvent.instance.Issue_Closed@s
     },
     {
       notifications = [
@@ -69,7 +55,7 @@ jira.NotificationScheme Default_Notification_Scheme@s {
           type = "Reporter"
         },
       ]
-      eventType = jira.IssueEvent.instance.Issue_Closed@s
+      eventType = jira.IssueEvent.instance.Issue_Comment_Edited@s
     },
     {
       notifications = [
@@ -97,7 +83,7 @@ jira.NotificationScheme Default_Notification_Scheme@s {
           type = "Reporter"
         },
       ]
-      eventType = jira.IssueEvent.instance.Issue_Reopened@s
+      eventType = jira.IssueEvent.instance.Issue_Created@s
     },
     {
       notifications = [
@@ -126,6 +112,76 @@ jira.NotificationScheme Default_Notification_Scheme@s {
         },
       ]
       eventType = jira.IssueEvent.instance.Issue_Moved@s
+    },
+    {
+      notifications = [
+        {
+          type = "AllWatchers"
+        },
+        {
+          type = "CurrentAssignee"
+        },
+        {
+          type = "Reporter"
+        },
+      ]
+      eventType = jira.IssueEvent.instance.Issue_Reopened@s
+    },
+    {
+      notifications = [
+        {
+          type = "AllWatchers"
+        },
+        {
+          type = "CurrentAssignee"
+        },
+        {
+          type = "Reporter"
+        },
+      ]
+      eventType = jira.IssueEvent.instance.Issue_Resolved@s
+    },
+    {
+      notifications = [
+        {
+          type = "AllWatchers"
+        },
+        {
+          type = "CurrentAssignee"
+        },
+        {
+          type = "Reporter"
+        },
+      ]
+      eventType = jira.IssueEvent.instance.Issue_Updated@s
+    },
+    {
+      notifications = [
+        {
+          type = "AllWatchers"
+        },
+        {
+          type = "CurrentAssignee"
+        },
+        {
+          type = "Reporter"
+        },
+      ]
+      eventType = jira.IssueEvent.instance.Issue_Worklog_Deleted@s
+    },
+    {
+      notifications = [
+        {
+          type = "AllWatchers"
+        },
+        {
+          type = "CurrentAssignee"
+        },
+        {
+          type = "Reporter"
+        },
+      ]
+      eventType = jira.IssueEvent.instance.Issue_Worklog_Updated@s
     },
     {
       notifications = [
@@ -168,62 +224,6 @@ jira.NotificationScheme Default_Notification_Scheme@s {
         },
       ]
       eventType = jira.IssueEvent.instance.Work_Stopped_On_Issue@s
-    },
-    {
-      notifications = [
-        {
-          type = "AllWatchers"
-        },
-        {
-          type = "CurrentAssignee"
-        },
-        {
-          type = "Reporter"
-        },
-      ]
-      eventType = jira.IssueEvent.instance.Generic_Event@s
-    },
-    {
-      notifications = [
-        {
-          type = "AllWatchers"
-        },
-        {
-          type = "CurrentAssignee"
-        },
-        {
-          type = "Reporter"
-        },
-      ]
-      eventType = jira.IssueEvent.instance.Issue_Comment_Edited@s
-    },
-    {
-      notifications = [
-        {
-          type = "AllWatchers"
-        },
-        {
-          type = "CurrentAssignee"
-        },
-        {
-          type = "Reporter"
-        },
-      ]
-      eventType = jira.IssueEvent.instance.Issue_Worklog_Updated@s
-    },
-    {
-      notifications = [
-        {
-          type = "AllWatchers"
-        },
-        {
-          type = "CurrentAssignee"
-        },
-        {
-          type = "Reporter"
-        },
-      ]
-      eventType = jira.IssueEvent.instance.Issue_Worklog_Deleted@s
     },
   ]
 }

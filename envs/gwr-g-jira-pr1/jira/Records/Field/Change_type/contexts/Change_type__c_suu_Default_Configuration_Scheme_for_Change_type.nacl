@@ -24,4 +24,5 @@ jira.CustomFieldContext Change_type__c_suu_Default_Configuration_Scheme_for_Chan
   _parent = [
     jira.Field.instance.Change_type__c@suu,
   ]
+  isGlobalContext = true
 }

@@ -3,12 +3,12 @@ type jira.ProjectLandingPageInfo {
   }
   string projectKey {
   }
-  string projectType {
-  }
-  number boardId {
-  }
+  
+  
   boolean simplified {
   }
   "Map<unknown>" additionalProperties {
+  }
+  jira.ProjectLandingPageInfo_attributes attributes {
   }
 }

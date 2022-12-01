@@ -1,6 +1,7 @@
-jira.Automation New_Bug__GWR_HR_App@ssuss {
-  name = "New Bug "
+jira.Automation gwr_20220812_story2_GWR_Finance_App@ssuss {
+  name = "gwr 20220812 story2"
   state = "ENABLED"
+  description = "HardToFindText"
   authorAccountId = "61980f073618cd006f48823b"
   actor = {
     type = "ACCOUNT_ID"
@@ -27,22 +28,30 @@ jira.Automation New_Bug__GWR_HR_App@ssuss {
         }
         selectedFieldType = "issuetype"
         comparison = "EQUALS"
-        compareValue = {
+        compareFieldValue = {
           type = "ID"
-          value = "10004"
+          value = "10006"
           multiValue = false
         }
       }
     },
     {
       component = "ACTION"
-      schemaVersion = 1
-      type = "jira.issue.comment"
+      schemaVersion = 10
+      type = "jira.issue.edit"
       value = {
-        comment = "This is a new bug"
-        publicComment = false
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "This is a story"
+          },
+        ]
         sendNotifications = true
-        addCommentOnce = true
       }
     },
   ]
@@ -50,7 +59,7 @@ jira.Automation New_Bug__GWR_HR_App@ssuss {
   notifyOnError = "FIRSTERROR"
   projects = [
     {
-      projectId = jira.Project.instance.GWR_HR_App@s
+      projectId = jira.Project.instance.GWR_Finance_App@s
     },
   ]
   tags = [

@@ -8,4 +8,5 @@ jira.CustomFieldContext GWR_criticality__textfield__c_suuuu_Default_Configuratio
   _parent = [
     jira.Field.instance.GWR_criticality__textfield__c@suuuu,
   ]
+  isGlobalContext = true
 }

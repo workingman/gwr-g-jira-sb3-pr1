@@ -8,7 +8,7 @@ type jira.Project {
   }
   string description {
   }
-  string lead {
+  jira.AccountIdInfo lead {
   }
   "List<jira.ProjectComponent>" components {
   }
@@ -56,13 +56,13 @@ type jira.Project {
   }
   string deletedDate {
   }
-  string deletedBy {
+  jira.AccountIdInfo deletedBy {
   }
   boolean archived {
   }
   string archivedDate {
   }
-  string archivedBy {
+  jira.AccountIdInfo archivedBy {
   }
   jira.ProjectLandingPageInfo landingPageInfo {
   }
@@ -72,7 +72,7 @@ type jira.Project {
   }
   string entityId {
   }
-  string leadAccountId {
+  jira.AccountIdInfo leadAccountId {
   }
   jira.WorkflowScheme workflowScheme {
   }
@@ -87,5 +87,7 @@ type jira.Project {
   jira.FieldConfigurationScheme fieldConfigurationScheme {
   }
   jira.IssueTypeScheme issueTypeScheme {
+  }
+  "List<jira.CustomFieldContext>" fieldContexts {
   }
 }

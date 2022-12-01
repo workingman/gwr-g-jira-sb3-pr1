@@ -6,19 +6,19 @@ type jira.ProjectComponent {
   }
   string description {
   }
-  string lead {
+  jira.AccountIdInfo lead {
   }
   string leadUserName {
   }
-  string leadAccountId {
+  jira.AccountIdInfo leadAccountId {
   }
   string assigneeType {
   }
-  string assignee {
+  jira.AccountIdInfo assignee {
   }
   string realAssigneeType {
   }
-  string realAssignee {
+  jira.AccountIdInfo realAssignee {
   }
   boolean isAssigneeTypeValid {
   }

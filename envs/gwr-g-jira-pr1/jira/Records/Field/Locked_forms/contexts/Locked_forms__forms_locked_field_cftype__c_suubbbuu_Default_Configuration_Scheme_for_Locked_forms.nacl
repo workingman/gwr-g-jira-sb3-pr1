@@ -4,4 +4,5 @@ jira.CustomFieldContext Locked_forms__forms_locked_field_cftype__c_suubbbuu_Defa
   _parent = [
     jira.Field.instance.Locked_forms__forms_locked_field_cftype__c@suubbbuu,
   ]
+  isGlobalContext = true
 }

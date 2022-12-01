@@ -1,6 +1,0 @@
-type jira.StatusProperty {
-  string key {
-  }
-  string value {
-  }
-}
