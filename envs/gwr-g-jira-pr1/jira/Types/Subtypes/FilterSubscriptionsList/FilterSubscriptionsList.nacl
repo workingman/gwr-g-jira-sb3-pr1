@@ -1,7 +1,7 @@
-type jira.UserList {
+type jira.FilterSubscriptionsList {
   number size {
   }
-  "List<jira.AccountIdInfo>" items {
+  "List<jira.FilterSubscription>" items {
   }
   number "max-results" {
   }

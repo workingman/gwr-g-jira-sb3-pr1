@@ -1,11 +1,16 @@
-jira.Automation gwr_20220812_bug_GWR_Finance_App@ssuss {
-  name = "gwr 20220812 bug"
+jira.Automation GWR_set_field_2_GWR_HR_App@sssuss {
+  name = "GWR set field 2"
   state = "ENABLED"
-  description = "HardToFindText"
-  authorAccountId = "61980f073618cd006f48823b"
+  authorAccountId = {
+    id = "61980f073618cd006f48823b"
+    displayName = "Geoffrey Routledge"
+  }
   actor = {
     type = "ACCOUNT_ID"
-    value = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
   }
   trigger = {
     component = "TRIGGER"
@@ -15,6 +20,10 @@ jira.Automation gwr_20220812_bug_GWR_Finance_App@ssuss {
       eventKey = "jira:issue_created"
       issueEvent = "issue_created"
     }
+    children = [
+    ]
+    conditions = [
+    ]
   }
   components = [
     {
@@ -30,10 +39,14 @@ jira.Automation gwr_20220812_bug_GWR_Finance_App@ssuss {
         comparison = "EQUALS"
         compareFieldValue = {
           type = "ID"
-          value = "10009"
+          value = jira.IssueType.instance.Epic
           multiValue = false
         }
       }
+      children = [
+      ]
+      conditions = [
+      ]
     },
     {
       component = "ACTION"
@@ -43,24 +56,35 @@ jira.Automation gwr_20220812_bug_GWR_Finance_App@ssuss {
         operations = [
           {
             field = {
-              type = "ID"
-              value = jira.Field.instance.Description
+              type = "NAME"
+              value = jira.Field.instance.GWR_chkbx2__multicheckboxes__c@suuuu.name
             }
-            fieldType = "description"
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
             type = "SET"
-            rawValue = "This is a bug"
+            value = [
+              {
+                type = "NAME"
+                value = "no"
+              },
+            ]
           },
         ]
         sendNotifications = true
       }
+      children = [
+      ]
+      conditions = [
+      ]
     },
   ]
   canOtherRuleTrigger = false
   notifyOnError = "FIRSTERROR"
   projects = [
     {
-      projectId = jira.Project.instance.GWR_Finance_App@s
+      projectId = jira.Project.instance.GWR_HR_App@s
     },
+  ]
+  labels = [
   ]
   tags = [
     {
@@ -69,4 +93,6 @@ jira.Automation gwr_20220812_bug_GWR_Finance_App@ssuss {
     },
   ]
   writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
 }

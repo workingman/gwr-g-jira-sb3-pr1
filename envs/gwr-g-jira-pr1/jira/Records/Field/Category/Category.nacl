@@ -4,4 +4,7 @@ jira.Field Category__jwm_category__c@uubuu {
   isLocked = true
   searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
   type = "com.atlassian.jira.plugin.system.customfieldtypes:jwm-category"
+  contexts = [
+    jira.CustomFieldContext.instance.Category__jwm_category__c_uubuu_Category_Field_Config_Scheme_for_Project___0_@uuuuumusssssfs_00123_00125,
+  ]
 }

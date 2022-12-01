@@ -1,9 +1,0 @@
-jira.Field GWR_criticality__textfield__c@suuuu {
-  name = "GWR criticality"
-  description = ""
-  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
-  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
-  contexts = [
-    jira.CustomFieldContext.instance.GWR_criticality__textfield__c_suuuu_Default_Configuration_Scheme_for_GWR_criticality@uuuuumusssss,
-  ]
-}

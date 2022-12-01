@@ -5,8 +5,8 @@ jira.Workflow classic_default_workflow@s {
       name = "Close Issue"
       description = ""
       from = [
-        jira.Status.instance.Open,
         jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Open,
         jira.Status.instance.Reopened,
       ]
       to = jira.Status.instance.Closed
@@ -40,6 +40,24 @@ jira.Workflow classic_default_workflow@s {
           ]
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "60"
+        },
+        {
+          key = "jira.i18n.submit"
+          value = "closeissue.close"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "closeissue.title"
+        },
+      ]
     },
     {
       name = "Close Issue"
@@ -67,6 +85,24 @@ jira.Workflow classic_default_workflow@s {
           }
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "60"
+        },
+        {
+          key = "jira.i18n.submit"
+          value = "closeissue.close"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "closeissue.title"
+        },
+      ]
     },
     {
       name = "Create Issue"
@@ -93,13 +129,27 @@ jira.Workflow classic_default_workflow@s {
           },
         ]
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "0"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "common.forms.create"
+        },
+      ]
     },
     {
       name = "Reopen Issue"
       description = ""
       from = [
-        jira.Status.instance.Resolved,
         jira.Status.instance.Closed,
+        jira.Status.instance.Resolved,
       ]
       to = jira.Status.instance.Reopened
       type = "directed"
@@ -131,13 +181,31 @@ jira.Workflow classic_default_workflow@s {
           }
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "80"
+        },
+        {
+          key = "jira.i18n.submit"
+          value = "issue.operations.reopen.issue"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "issue.operations.reopen.issue"
+        },
+      ]
     },
     {
       name = "Resolve Issue"
       description = ""
       from = [
-        jira.Status.instance.Open,
         jira.Status.instance.In_Progress@s,
+        jira.Status.instance.Open,
         jira.Status.instance.Reopened,
       ]
       to = jira.Status.instance.Resolved
@@ -160,6 +228,24 @@ jira.Workflow classic_default_workflow@s {
           }
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "40"
+        },
+        {
+          key = "jira.i18n.submit"
+          value = "resolveissue.resolve"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "resolveissue.title"
+        },
+      ]
     },
     {
       name = "Start Progress"
@@ -195,6 +281,20 @@ jira.Workflow classic_default_workflow@s {
           type = "AllowOnlyAssignee"
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "20"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "startprogress.title"
+        },
+      ]
     },
     {
       name = "Stop Progress"
@@ -229,12 +329,36 @@ jira.Workflow classic_default_workflow@s {
           type = "AllowOnlyAssignee"
         }
       }
+      properties = [
+        {
+          key = "opsbar-sequence"
+          value = "20"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "stopprogress.title"
+        },
+      ]
     },
   ]
   statuses = [
     {
-      id = jira.Status.instance.Open
-      name = "Open"
+      id = jira.Status.instance.Closed
+      name = "Closed"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "false"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.In_Progress@s
+      name = "In Progress"
       properties = [
         {
           key = "jira.issue.editable"
@@ -243,8 +367,8 @@ jira.Workflow classic_default_workflow@s {
       ]
     },
     {
-      id = jira.Status.instance.In_Progress@s
-      name = "In Progress"
+      id = jira.Status.instance.Open
+      name = "Open"
       properties = [
         {
           key = "jira.issue.editable"
@@ -269,16 +393,6 @@ jira.Workflow classic_default_workflow@s {
         {
           key = "jira.issue.editable"
           value = "true"
-        },
-      ]
-    },
-    {
-      id = jira.Status.instance.Closed
-      name = "Closed"
-      properties = [
-        {
-          key = "jira.issue.editable"
-          value = "false"
         },
       ]
     },

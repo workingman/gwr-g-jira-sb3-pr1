@@ -1,9 +1,0 @@
-jira.Field GWR_text1__textfield__c@suuuu {
-  name = "GWR text1"
-  description = ""
-  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
-  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
-  contexts = [
-    jira.CustomFieldContext.instance.GWR_text1__textfield__c_suuuu_Default_Configuration_Scheme_for_GWR_text1@uuuuumusssss,
-  ]
-}

@@ -1,14 +1,16 @@
-jira.Automation gwr_20220812_story3_GWR_Finance_App@ssuss {
-  name = "gwr 20220812 story3"
+jira.Automation GWR_set_field_1_GWR_HR_App@sssuss {
+  name = "GWR set field 1"
   state = "ENABLED"
-  description = '''
-HardToFindText
-Change after deployment
-'''
-  authorAccountId = "61980f073618cd006f48823b"
+  authorAccountId = {
+    id = "61980f073618cd006f48823b"
+    displayName = "Geoffrey Routledge"
+  }
   actor = {
     type = "ACCOUNT_ID"
-    value = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
   }
   trigger = {
     component = "TRIGGER"
@@ -18,6 +20,10 @@ Change after deployment
       eventKey = "jira:issue_created"
       issueEvent = "issue_created"
     }
+    children = [
+    ]
+    conditions = [
+    ]
   }
   components = [
     {
@@ -33,10 +39,14 @@ Change after deployment
         comparison = "EQUALS"
         compareFieldValue = {
           type = "ID"
-          value = "10006"
+          value = jira.IssueType.instance.Epic
           multiValue = false
         }
       }
+      children = [
+      ]
+      conditions = [
+      ]
     },
     {
       component = "ACTION"
@@ -46,46 +56,35 @@ Change after deployment
         operations = [
           {
             field = {
-              type = "ID"
-              value = jira.Field.instance.Description
+              type = "NAME"
+              value = jira.Field.instance.GWR_chkbx1__multicheckboxes__c@suuuu.name
             }
-            fieldType = "description"
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
             type = "SET"
-            rawValue = "This is a story"
+            value = [
+              {
+                type = "NAME"
+                value = "yes"
+              },
+            ]
           },
         ]
         sendNotifications = true
       }
-    },
-    {
-      component = "ACTION"
-      schemaVersion = 10
-      type = "jira.issue.edit"
-      value = {
-        operations = [
-          {
-            field = {
-              type = "ID"
-              value = jira.Field.instance.GWR_Category__select__c@suuuu
-            }
-            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
-            type = "SET"
-            value = {
-              type = "NAME"
-              value = "Green"
-            }
-          },
-        ]
-        sendNotifications = false
-      }
+      children = [
+      ]
+      conditions = [
+      ]
     },
   ]
   canOtherRuleTrigger = false
   notifyOnError = "FIRSTERROR"
   projects = [
     {
-      projectId = jira.Project.instance.GWR_Finance_App@s
+      projectId = jira.Project.instance.GWR_HR_App@s
     },
+  ]
+  labels = [
   ]
   tags = [
     {
@@ -94,4 +93,6 @@ Change after deployment
     },
   ]
   writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
 }

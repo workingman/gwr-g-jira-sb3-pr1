@@ -1,14 +1,14 @@
 jira.ApplicationRole Jira_Core@s {
   key = "jira-core"
   groups = [
-    jira.Group.instance.jira_workmanagement_users_gwr_pr1@b,
-    jira.Group.instance.atlassian_addons_admin@b,
-    jira.Group.instance.site_admins@b,
+    jira.Group.instance.jira_workmanagement_users_gwr_pr1@b.name,
+    jira.Group.instance.atlassian_addons_admin@b.name,
+    jira.Group.instance.site_admins@b.name,
   ]
   
   name = "Jira Core"
   defaultGroups = [
-    jira.Group.instance.jira_workmanagement_users_gwr_pr1@b,
+    jira.Group.instance.jira_workmanagement_users_gwr_pr1@b.name,
   ]
   
   selectedByDefault = false

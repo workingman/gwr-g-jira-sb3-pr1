@@ -1,55 +1,9 @@
 jira.Filter created_last_7_days@s {
   name = "created last 7 days"
-  owner = "Geoffrey Routledge"
-  jql = "status in (Backlog, Done, \"In Progress\", \"Selected for Development\") AND created >= -7d ORDER BY created DESC"
-  _generated_dependencies = [
-    {
-      reference = jira.Field.instance.Created
-      occurrences = [
-        {
-          location = jira.Filter.instance.created_last_7_days@s.jql
-        },
-      ]
-    },
-    {
-      reference = jira.Field.instance.Status
-      occurrences = [
-        {
-          location = jira.Filter.instance.created_last_7_days@s.jql
-        },
-      ]
-    },
-    {
-      reference = jira.Status.instance.Backlog
-      occurrences = [
-        {
-          location = jira.Filter.instance.created_last_7_days@s.jql
-        },
-      ]
-    },
-    {
-      reference = jira.Status.instance.Done
-      occurrences = [
-        {
-          location = jira.Filter.instance.created_last_7_days@s.jql
-        },
-      ]
-    },
-    {
-      reference = jira.Status.instance.In_Progress@s
-      occurrences = [
-        {
-          location = jira.Filter.instance.created_last_7_days@s.jql
-        },
-      ]
-    },
-    {
-      reference = jira.Status.instance.Selected_for_Development@s
-      occurrences = [
-        {
-          location = jira.Filter.instance.created_last_7_days@s.jql
-        },
-      ]
-    },
-  ]
+  owner = {
+    id = "61980f073618cd006f48823b"
+    displayName = "Geoffrey Routledge"
+  }
+  jql = "${ jira.Field.instance.Status } in (${ jira.Status.instance.Backlog.name }, ${ jira.Status.instance.Done.name }, \"${ jira.Status.instance.In_Progress@s.name }\", \"${ jira.Status.instance.Selected_for_Development@s.name }\") AND ${ jira.Field.instance.Created } >= -7d ORDER BY ${ jira.Field.instance.Created } DESC"
+  
 }

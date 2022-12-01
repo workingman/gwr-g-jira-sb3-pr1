@@ -20,7 +20,6 @@ jira.Screen GWRHA__Kanban_Bug_Screen@fsss {
         jira.Field.instance.Linked_Issues@s,
         jira.Field.instance.Assignee,
         jira.Field.instance.Epic_Link__c@suu,
-        jira.Field.instance.GWR_text1__textfield__c@suuuu,
       ]
       position = 0
     }
