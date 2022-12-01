@@ -1,4 +1,6 @@
 type jira.AutomationOperation {
   jira.AutomationField field {
   }
+  jira.AutomationField value {
+  }
 }

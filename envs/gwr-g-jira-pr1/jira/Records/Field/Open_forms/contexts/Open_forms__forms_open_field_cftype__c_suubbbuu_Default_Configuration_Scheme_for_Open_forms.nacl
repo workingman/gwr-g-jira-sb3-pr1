@@ -4,4 +4,5 @@ jira.CustomFieldContext Open_forms__forms_open_field_cftype__c_suubbbuu_Default_
   _parent = [
     jira.Field.instance.Open_forms__forms_open_field_cftype__c@suubbbuu,
   ]
+  isGlobalContext = true
 }

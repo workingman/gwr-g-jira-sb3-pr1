@@ -4,4 +4,5 @@ jira.CustomFieldContext Request_Type__c_suu_Default_Configuration_Scheme_for_Req
   _parent = [
     jira.Field.instance.Request_Type__c@suu,
   ]
+  isGlobalContext = true
 }

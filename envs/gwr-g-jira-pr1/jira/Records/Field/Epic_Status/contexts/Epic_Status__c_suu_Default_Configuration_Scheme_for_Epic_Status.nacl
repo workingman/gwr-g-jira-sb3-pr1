@@ -7,4 +7,5 @@ jira.CustomFieldContext Epic_Status__c_suu_Default_Configuration_Scheme_for_Epic
   _parent = [
     jira.Field.instance.Epic_Status__c@suu,
   ]
+  isGlobalContext = true
 }

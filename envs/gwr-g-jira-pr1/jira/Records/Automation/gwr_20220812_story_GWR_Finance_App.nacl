@@ -1,0 +1,72 @@
+jira.Automation gwr_20220812_story_GWR_Finance_App@ssuss {
+  name = "gwr 20220812 story"
+  state = "ENABLED"
+  description = "HardToFindText"
+  authorAccountId = "61980f073618cd006f48823b"
+  actor = {
+    type = "ACCOUNT_ID"
+    value = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Issue_Type@s
+        }
+        selectedFieldType = "issuetype"
+        comparison = "EQUALS"
+        compareFieldValue = {
+          type = "ID"
+          value = "10006"
+          multiValue = false
+        }
+      }
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 10
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "This is a story"
+          },
+        ]
+        sendNotifications = true
+      }
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.GWR_Finance_App@s
+    },
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+}

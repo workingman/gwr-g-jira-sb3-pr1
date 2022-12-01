@@ -41,4 +41,6 @@ type jira.AutomationComponentValue {
   }
   jira.AutomationRole role {
   }
+  jira.AutomationCompareValue compareFieldValue {
+  }
 }

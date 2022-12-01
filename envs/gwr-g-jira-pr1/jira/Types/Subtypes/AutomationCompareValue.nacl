@@ -1,0 +1,6 @@
+type jira.AutomationCompareValue {
+  string value {
+  }
+  "List<string>" values {
+  }
+}
