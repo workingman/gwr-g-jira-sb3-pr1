@@ -19,5 +19,4 @@ jira.CustomFieldContext GWR_Category__select__c_suuuu_Default_Configuration_Sche
   _parent = [
     jira.Field.instance.GWR_Category__select__c@suuuu,
   ]
-  isGlobalContext = true
 }

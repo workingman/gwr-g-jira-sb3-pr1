@@ -1,5 +1,5 @@
-jira.Automation Created_in_Prod_20220830_GWR_HR_App@sssuss {
-  name = "Created in Prod 20220830"
+jira.Automation Created_in_Prod__GWR_HR_App@sssuss {
+  name = "Created in Prod "
   state = "ENABLED"
   authorAccountId = "61980f073618cd006f48823b"
   actor = {
@@ -27,33 +27,22 @@ jira.Automation Created_in_Prod_20220830_GWR_HR_App@sssuss {
         }
         selectedFieldType = "status"
         comparison = "ONE_OF"
-        compareFieldValue = {
+        compareValue = {
           type = "NAME"
+          value = "[\"Backlog\"]"
           multiValue = true
-          values = [
-            jira.Status.instance.Selected_for_Development@s,
-            jira.Status.instance.Backlog,
-          ]
         }
       }
     },
     {
       component = "ACTION"
-      schemaVersion = 10
-      type = "jira.issue.edit"
+      schemaVersion = 1
+      type = "jira.issue.comment"
       value = {
-        operations = [
-          {
-            field = {
-              type = "ID"
-              value = jira.Field.instance.Description
-            }
-            fieldType = "description"
-            type = "SET"
-            rawValue = "automation action"
-          },
-        ]
+        comment = "This is a backlog item"
+        publicComment = false
         sendNotifications = true
+        addCommentOnce = true
       }
     },
   ]

@@ -1,15 +1,4 @@
 type jira.Statuses {
-  
-  number startAt {
-  }
-  number total {
-  }
-  boolean isLast {
-  }
-  number maxResults {
-  }
-  "List<jira.Status>" values {
-  }
-  string nextPage {
+  "List<jira.Status>" items {
   }
 }

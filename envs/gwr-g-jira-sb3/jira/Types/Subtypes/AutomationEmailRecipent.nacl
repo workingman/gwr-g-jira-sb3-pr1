@@ -1,4 +1,0 @@
-type jira.AutomationEmailRecipent {
-  string value {
-  }
-}

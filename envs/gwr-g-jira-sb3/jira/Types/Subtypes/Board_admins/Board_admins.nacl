@@ -1,5 +1,5 @@
 type jira.Board_admins {
-  "List<jira.AccountIdInfo>" users {
+  "List<string>" users {
   }
   "List<jira.Board_admins_groups>" groups {
   }

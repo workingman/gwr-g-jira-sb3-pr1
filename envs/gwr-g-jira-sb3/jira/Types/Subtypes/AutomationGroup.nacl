@@ -1,4 +1,0 @@
-type jira.AutomationGroup {
-  string value {
-  }
-}

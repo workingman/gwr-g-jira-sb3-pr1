@@ -4,5 +4,4 @@ jira.CustomFieldContext Submitted_forms__forms_submitted_field_cftype__c_suubbbu
   _parent = [
     jira.Field.instance.Submitted_forms__forms_submitted_field_cftype__c@suubbbuu,
   ]
-  isGlobalContext = true
 }

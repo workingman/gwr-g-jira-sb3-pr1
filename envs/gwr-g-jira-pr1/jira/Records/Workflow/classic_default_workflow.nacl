@@ -28,13 +28,13 @@ jira.Workflow classic_default_workflow@s {
             {
               type = "PermissionCondition"
               configuration = {
-                permissionKey = "CLOSE_ISSUES"
+                permissionKey = "RESOLVE_ISSUES"
               }
             },
             {
               type = "PermissionCondition"
               configuration = {
-                permissionKey = "RESOLVE_ISSUES"
+                permissionKey = "CLOSE_ISSUES"
               }
             },
           ]
@@ -106,21 +106,18 @@ jira.Workflow classic_default_workflow@s {
       rules = {
         postFunctions = [
           {
-            type = "FireIssueEventFunction"
+            type = "UpdateIssueFieldFunction"
             configuration = {
-              
-              
-              event = {
-                id = jira.IssueEvent.instance.Issue_Reopened@s
-              }
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
           {
-            type = "UpdateIssueFieldFunction"
+            type = "FireIssueEventFunction"
             configuration = {
-              
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
+              event = {
+                id = jira.IssueEvent.instance.Issue_Reopened@s
+              }
             }
           },
         ]
@@ -173,21 +170,18 @@ jira.Workflow classic_default_workflow@s {
       rules = {
         postFunctions = [
           {
-            type = "FireIssueEventFunction"
+            type = "UpdateIssueFieldFunction"
             configuration = {
-              
-              
-              event = {
-                id = jira.IssueEvent.instance.Work_Started_On_Issue@s
-              }
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
           {
-            type = "UpdateIssueFieldFunction"
+            type = "FireIssueEventFunction"
             configuration = {
-              
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
+              event = {
+                id = jira.IssueEvent.instance.Work_Started_On_Issue@s
+              }
             }
           },
         ]
@@ -207,21 +201,18 @@ jira.Workflow classic_default_workflow@s {
       rules = {
         postFunctions = [
           {
-            type = "FireIssueEventFunction"
+            type = "UpdateIssueFieldFunction"
             configuration = {
-              
-              
-              event = {
-                id = jira.IssueEvent.instance.Work_Stopped_On_Issue@s
-              }
+              fieldId = jira.Field.instance.Resolution
+              fieldValue = ""
             }
           },
           {
-            type = "UpdateIssueFieldFunction"
+            type = "FireIssueEventFunction"
             configuration = {
-              
-              fieldId = jira.Field.instance.Resolution
-              fieldValue = ""
+              event = {
+                id = jira.IssueEvent.instance.Work_Stopped_On_Issue@s
+              }
             }
           },
         ]
@@ -233,8 +224,18 @@ jira.Workflow classic_default_workflow@s {
   ]
   statuses = [
     {
-      id = jira.Status.instance.Open
-      name = "Open"
+      id = jira.Status.instance.Closed
+      name = "Closed"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "false"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.In_Progress@s
+      name = "In Progress"
       properties = [
         {
           key = "jira.issue.editable"
@@ -243,8 +244,8 @@ jira.Workflow classic_default_workflow@s {
       ]
     },
     {
-      id = jira.Status.instance.In_Progress@s
-      name = "In Progress"
+      id = jira.Status.instance.Open
+      name = "Open"
       properties = [
         {
           key = "jira.issue.editable"
@@ -269,16 +270,6 @@ jira.Workflow classic_default_workflow@s {
         {
           key = "jira.issue.editable"
           value = "true"
-        },
-      ]
-    },
-    {
-      id = jira.Status.instance.Closed
-      name = "Closed"
-      properties = [
-        {
-          key = "jira.issue.editable"
-          value = "false"
         },
       ]
     },

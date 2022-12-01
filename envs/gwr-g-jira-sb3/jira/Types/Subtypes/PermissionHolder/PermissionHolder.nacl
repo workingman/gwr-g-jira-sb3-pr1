@@ -1,7 +1,7 @@
 type jira.PermissionHolder {
   string type {
   }
-  unknown parameter {
+  string parameter {
   }
   string value {
   }
@@ -9,7 +9,7 @@ type jira.PermissionHolder {
   }
   "Map<unknown>" additionalProperties {
   }
-  jira.AccountIdInfo user {
+  string user {
   }
   serviceid id {
   }

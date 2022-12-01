@@ -7,5 +7,4 @@ jira.CustomFieldContext Epic_Name__c_suu_Default_Configuration_Scheme_for_Epic_N
   _parent = [
     jira.Field.instance.Epic_Name__c@suu,
   ]
-  isGlobalContext = true
 }

@@ -4,5 +4,4 @@ jira.CustomFieldContext Satisfaction__c_Default_Configuration_Scheme_for_Satisfa
   _parent = [
     jira.Field.instance.Satisfaction__c,
   ]
-  isGlobalContext = true
 }

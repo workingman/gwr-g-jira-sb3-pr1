@@ -1,8 +1,0 @@
-type jira.Status {
-  boolean resolved {
-  }
-  jira.Icon icon {
-  }
-  unknown scope {
-  }
-}

@@ -8,5 +8,4 @@ jira.CustomFieldContext GWR_text1__textfield__c_suuuu_Default_Configuration_Sche
   _parent = [
     jira.Field.instance.GWR_text1__textfield__c@suuuu,
   ]
-  isGlobalContext = true
 }

@@ -4,5 +4,4 @@ jira.CustomFieldContext Approvals__c_Default_Configuration_Scheme_for_Approvals@
   _parent = [
     jira.Field.instance.Approvals__c,
   ]
-  isGlobalContext = true
 }

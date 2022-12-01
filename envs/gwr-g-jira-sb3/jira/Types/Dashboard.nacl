@@ -8,7 +8,7 @@ type jira.Dashboard {
   }
   string name {
   }
-  jira.AccountIdInfo owner {
+  string owner {
   }
   number popularity {
   }

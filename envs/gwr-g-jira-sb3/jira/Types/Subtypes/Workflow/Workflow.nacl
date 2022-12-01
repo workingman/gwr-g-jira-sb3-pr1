@@ -25,6 +25,10 @@ type jira.Workflow {
   serviceid entityId {
     _hidden_value = true
   }
-  
-  
+  "Map<string>" transitionIds {
+    _hidden_value = true
+  }
+  "Map<string>" stepIds {
+    _hidden_value = true
+  }
 }

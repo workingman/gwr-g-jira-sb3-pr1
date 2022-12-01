@@ -20,22 +20,11 @@ jira.Screen GWRFA__Kanban_Bug_Screen@fsss {
         jira.Field.instance.Linked_Issues@s,
         jira.Field.instance.Assignee,
         jira.Field.instance.Epic_Link__c@suu,
+        jira.Field.instance.GWR_text1__c@suu,
+        jira.Field.instance.GWR_Category__select__c@suuuu,
+        jira.Field.instance.GWR_criticality__textfield__c@suuuu,
       ]
       position = 0
-    }
-    GWR = {
-      name = "GWR"
-      fields = [
-        jira.Field.instance.GWR_Category__select__c@suuuu,
-        jira.Field.instance.GWR_Index_20220926a__float__c@ssuuuu,
-        jira.Field.instance.GWR_Rating__float__c@suuuu,
-        jira.Field.instance.GWR_Volume_20220830__float__c@ssuuuu,
-        jira.Field.instance.GWR_chkbx1__multicheckboxes__c@suuuu,
-        jira.Field.instance.GWR_chkbx2__multicheckboxes__c@suuuu,
-        jira.Field.instance.GWR_criticality__textfield__c@suuuu,
-        jira.Field.instance.GWR_text1__c@suu,
-      ]
-      position = 1
     }
   }
 }

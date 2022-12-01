@@ -9,7 +9,7 @@ type jira.CustomFieldContextDefaultValue {
   }
   "List<string>" optionIds {
   }
-  jira.AccountIdInfo accountId {
+  string accountId {
   }
   jira.UserFilter userFilter {
   }

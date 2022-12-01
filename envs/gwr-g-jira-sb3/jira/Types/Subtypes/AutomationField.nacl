@@ -1,6 +1,0 @@
-type jira.AutomationField {
-  string type {
-  }
-  string value {
-  }
-}

@@ -11,5 +11,4 @@ jira.CustomFieldContext Story_Points__c_suu_Default_Configuration_Scheme_for_Sto
   _parent = [
     jira.Field.instance.Story_Points__c@suu,
   ]
-  isGlobalContext = true
 }

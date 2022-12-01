@@ -5,6 +5,4 @@ type jira.ProjectRoleGroup {
   }
   "Map<unknown>" additionalProperties {
   }
-  string groupId {
-  }
 }

@@ -4,5 +4,4 @@ jira.CustomFieldContext development__c_Default_Configuration_Scheme_for_developm
   _parent = [
     jira.Field.instance.development__c,
   ]
-  isGlobalContext = true
 }

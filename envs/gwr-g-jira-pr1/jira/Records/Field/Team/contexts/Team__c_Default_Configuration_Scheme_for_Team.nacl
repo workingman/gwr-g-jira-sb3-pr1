@@ -4,5 +4,4 @@ jira.CustomFieldContext Team__c_Default_Configuration_Scheme_for_Team@uuussss {
   _parent = [
     jira.Field.instance.Team__c,
   ]
-  isGlobalContext = true
 }

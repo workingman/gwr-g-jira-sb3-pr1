@@ -8,5 +8,4 @@ jira.CustomFieldContext Actual_start__c_suu_Default_Configuration_Scheme_for_Act
   _parent = [
     jira.Field.instance.Actual_start__c@suu,
   ]
-  isGlobalContext = true
 }

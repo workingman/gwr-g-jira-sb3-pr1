@@ -19,6 +19,7 @@ jira.Screen GWRFA__Kanban_Bug_Screen@fsss {
         jira.Field.instance.Affects_versions@s,
         jira.Field.instance.Linked_Issues@s,
         jira.Field.instance.GWR_text1__textfield__c@suuuu,
+        jira.Field.instance.GWR_Category__select__c@suuuu,
         jira.Field.instance.GWR_criticality__textfield__c@suuuu,
       ]
       position = 0

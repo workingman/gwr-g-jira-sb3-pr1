@@ -5,10 +5,8 @@ type jira.AutomationComponent {
   }
   string type {
   }
-  jira.AutomationComponentValue value {
+  unknown value {
   }
   "List<jira.AutomationComponent>" children {
-  }
-  "List<jira.AutomationComponent>" conditions {
   }
 }

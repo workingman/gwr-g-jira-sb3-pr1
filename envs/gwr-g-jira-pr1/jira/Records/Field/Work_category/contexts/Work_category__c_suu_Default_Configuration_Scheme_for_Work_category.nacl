@@ -4,5 +4,4 @@ jira.CustomFieldContext Work_category__c_suu_Default_Configuration_Scheme_for_Wo
   _parent = [
     jira.Field.instance.Work_category__c@suu,
   ]
-  isGlobalContext = true
 }

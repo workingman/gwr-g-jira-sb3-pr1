@@ -1,7 +1,6 @@
-jira.Automation gwr_20220812_story_GWR_Finance_App@ssuss {
-  name = "gwr 20220812 story"
+jira.Automation GWR_Epic_commentary_GWR_Finance_App@ssuss {
+  name = "GWR Epic commentary"
   state = "ENABLED"
-  description = "HardToFindText"
   authorAccountId = "61980f073618cd006f48823b"
   actor = {
     type = "ACCOUNT_ID"
@@ -24,34 +23,26 @@ jira.Automation gwr_20220812_story_GWR_Finance_App@ssuss {
       value = {
         selectedField = {
           type = "ID"
-          value = jira.Field.instance.Issue_Type@s
+          value = "issuetype"
         }
         selectedFieldType = "issuetype"
         comparison = "EQUALS"
-        compareFieldValue = {
+        compareValue = {
           type = "ID"
-          value = "10006"
+          value = "10000"
           multiValue = false
         }
       }
     },
     {
       component = "ACTION"
-      schemaVersion = 10
-      type = "jira.issue.edit"
+      schemaVersion = 1
+      type = "jira.issue.comment"
       value = {
-        operations = [
-          {
-            field = {
-              type = "ID"
-              value = jira.Field.instance.Description
-            }
-            fieldType = "description"
-            type = "SET"
-            rawValue = "This is a story"
-          },
-        ]
+        comment = "GWR comment on epics"
+        publicComment = false
         sendNotifications = true
+        addCommentOnce = true
       }
     },
   ]
@@ -60,12 +51,6 @@ jira.Automation gwr_20220812_story_GWR_Finance_App@ssuss {
   projects = [
     {
       projectId = jira.Project.instance.GWR_Finance_App@s
-    },
-  ]
-  tags = [
-    {
-      tagType = "IS_RULE_UPDATED"
-      tagValue = "true"
     },
   ]
   writeAccessType = "UNRESTRICTED"

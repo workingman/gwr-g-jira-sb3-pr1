@@ -1,4 +1,0 @@
-type jira.AutomationConditionCriteria {
-  string value {
-  }
-}

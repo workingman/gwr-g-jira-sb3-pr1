@@ -4,5 +4,4 @@ jira.CustomFieldContext Target_end__c_suu_Default_Configuration_Scheme_for_Targe
   _parent = [
     jira.Field.instance.Target_end__c@suu,
   ]
-  isGlobalContext = true
 }

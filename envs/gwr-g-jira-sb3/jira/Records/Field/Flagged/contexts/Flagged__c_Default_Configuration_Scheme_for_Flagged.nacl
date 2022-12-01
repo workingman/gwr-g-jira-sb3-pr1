@@ -14,5 +14,4 @@ jira.CustomFieldContext Flagged__c_Default_Configuration_Scheme_for_Flagged@uuus
   _parent = [
     jira.Field.instance.Flagged__c,
   ]
-  isGlobalContext = true
 }

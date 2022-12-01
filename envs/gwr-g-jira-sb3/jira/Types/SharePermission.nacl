@@ -9,6 +9,6 @@ type jira.SharePermission {
   }
   jira.GroupName group {
   }
-  jira.AccountIdInfo user {
+  string user {
   }
 }

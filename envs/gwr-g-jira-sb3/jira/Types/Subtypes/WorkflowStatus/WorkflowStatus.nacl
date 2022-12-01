@@ -3,6 +3,7 @@ type jira.WorkflowStatus {
   }
   string name {
   }
-  "List<jira.WorkflowProperty>" properties {
+  "List<jira.StatusProperty>" properties {
+    _required = true
   }
 }

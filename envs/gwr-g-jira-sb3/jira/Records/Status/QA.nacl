@@ -1,7 +1,7 @@
 jira.Status QA {
   description = "This status is managed internally by Jira Software"
-  
+  iconUrl = "/"
   name = "QA"
-  
+  untranslatedName = "QA"
   statusCategory = jira.StatusCategory.instance.In_Progress@s
 }

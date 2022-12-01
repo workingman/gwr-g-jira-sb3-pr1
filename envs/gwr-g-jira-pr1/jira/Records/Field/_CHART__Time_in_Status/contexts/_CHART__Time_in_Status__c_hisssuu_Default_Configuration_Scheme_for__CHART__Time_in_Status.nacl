@@ -4,5 +4,4 @@ jira.CustomFieldContext _CHART__Time_in_Status__c_hisssuu_Default_Configuration_
   _parent = [
     jira.Field.instance._CHART__Time_in_Status__c@hisssuu,
   ]
-  isGlobalContext = true
 }

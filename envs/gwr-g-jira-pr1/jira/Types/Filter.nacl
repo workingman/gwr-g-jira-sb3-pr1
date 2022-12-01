@@ -24,7 +24,7 @@ type jira.Filter {
   }
   jira.UserList sharedUsers {
   }
-  "List<jira.FilterSubscription>" subscriptions {
+  jira.FilterSubscriptionsList subscriptions {
   }
   "List<jira.ColumnItem>" columns {
   }

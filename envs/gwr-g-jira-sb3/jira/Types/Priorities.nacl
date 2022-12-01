@@ -1,15 +1,4 @@
 type jira.Priorities {
-  
-  string nextPage {
-  }
-  number maxResults {
-  }
-  number startAt {
-  }
-  number total {
-  }
-  boolean isLast {
-  }
-  "List<jira.Priority>" values {
+  "List<jira.Priority>" items {
   }
 }

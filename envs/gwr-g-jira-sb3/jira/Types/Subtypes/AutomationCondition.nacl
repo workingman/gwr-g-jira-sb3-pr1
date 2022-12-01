@@ -1,6 +1,0 @@
-type jira.AutomationCondition {
-  string field {
-  }
-  "List<jira.AutomationConditionCriteria>" criteria {
-  }
-}

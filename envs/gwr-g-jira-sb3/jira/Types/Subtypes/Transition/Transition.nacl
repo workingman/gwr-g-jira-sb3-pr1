@@ -15,6 +15,6 @@ type jira.Transition {
   }
   jira.WorkflowRules rules {
   }
-  "List<jira.WorkflowProperty>" properties {
+  jira.Transition_properties properties {
   }
 }

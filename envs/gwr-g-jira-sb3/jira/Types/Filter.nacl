@@ -6,7 +6,7 @@ type jira.Filter {
   }
   string description {
   }
-  jira.AccountIdInfo owner {
+  string owner {
   }
   string jql {
   }

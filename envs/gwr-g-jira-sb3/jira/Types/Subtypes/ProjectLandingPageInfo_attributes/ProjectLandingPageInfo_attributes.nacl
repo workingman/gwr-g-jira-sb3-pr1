@@ -1,4 +1,0 @@
-type jira.ProjectLandingPageInfo_attributes {
-  "Map<string>" additionalProperties {
-  }
-}

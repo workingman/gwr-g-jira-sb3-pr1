@@ -9,7 +9,7 @@ type jira.Automation {
   }
   string state {
   }
-  jira.AccountIdInfo authorAccountId {
+  string authorAccountId {
   }
   jira.AutomationActor actor {
   }
@@ -26,7 +26,5 @@ type jira.Automation {
   string notifyOnError {
   }
   string writeAccessType {
-  }
-  "List<number>" labels {
   }
 }

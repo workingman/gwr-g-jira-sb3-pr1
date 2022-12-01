@@ -88,6 +88,4 @@ type jira.Project {
   }
   jira.IssueTypeScheme issueTypeScheme {
   }
-  "List<jira.CustomFieldContext>" fieldContexts {
-  }
 }

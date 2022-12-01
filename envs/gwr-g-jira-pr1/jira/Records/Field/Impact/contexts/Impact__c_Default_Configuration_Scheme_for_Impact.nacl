@@ -29,5 +29,4 @@ jira.CustomFieldContext Impact__c_Default_Configuration_Scheme_for_Impact@uuusss
   _parent = [
     jira.Field.instance.Impact__c,
   ]
-  isGlobalContext = true
 }

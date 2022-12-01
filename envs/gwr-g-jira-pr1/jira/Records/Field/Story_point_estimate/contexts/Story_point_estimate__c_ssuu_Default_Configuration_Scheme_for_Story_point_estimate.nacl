@@ -4,5 +4,4 @@ jira.CustomFieldContext Story_point_estimate__c_ssuu_Default_Configuration_Schem
   _parent = [
     jira.Field.instance.Story_point_estimate__c@ssuu,
   ]
-  isGlobalContext = true
 }

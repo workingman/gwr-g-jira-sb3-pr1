@@ -3,7 +3,7 @@ type jira.UserDetails {
   }
   string key {
   }
-  jira.AccountIdInfo accountId {
+  string accountId {
   }
   string emailAddress {
   }

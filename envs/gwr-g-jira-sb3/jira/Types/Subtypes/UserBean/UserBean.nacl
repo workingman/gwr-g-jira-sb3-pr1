@@ -7,7 +7,7 @@ type jira.UserBean {
   }
   boolean active {
   }
-  jira.AccountIdInfo accountId {
+  string accountId {
   }
   jira.UserBeanAvatarUrls avatarUrls {
   }

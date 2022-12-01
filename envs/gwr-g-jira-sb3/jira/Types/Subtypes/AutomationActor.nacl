@@ -1,6 +1,6 @@
 type jira.AutomationActor {
   string type {
   }
-  unknown value {
+  string value {
   }
 }

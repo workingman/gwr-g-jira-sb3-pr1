@@ -4,5 +4,4 @@ jira.CustomFieldContext Issue_color__c_suu_Default_Configuration_Scheme_for_Issu
   _parent = [
     jira.Field.instance.Issue_color__c@suu,
   ]
-  isGlobalContext = true
 }

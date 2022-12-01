@@ -1,4 +1,0 @@
-type jira.AutomationRole {
-  string value {
-  }
-}

@@ -1,8 +1,0 @@
-jira.CustomFieldContext Category__jwm_category__c_uubuu_Category_Field_Config_Scheme_for_Project___0_@uuuuumusssssfs_00123_00125 {
-  name = "Category Field Config Scheme for Project: {0}"
-  description = "Category Field Options"
-  isGlobalContext = true
-  _parent = [
-    jira.Field.instance.Category__jwm_category__c@uubuu,
-  ]
-}

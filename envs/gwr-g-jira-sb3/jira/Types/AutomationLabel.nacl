@@ -1,9 +1,0 @@
-type jira.AutomationLabel {
-  string name {
-  }
-  string color {
-  }
-  serviceid_number id {
-    _hidden_value = true
-  }
-}

@@ -8,5 +8,4 @@ jira.CustomFieldContext Start_date__c_suu_Default_Configuration_Scheme_for_Start
   _parent = [
     jira.Field.instance.Start_date__c@suu,
   ]
-  isGlobalContext = true
 }

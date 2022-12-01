@@ -1,7 +1,7 @@
 type jira.UserList {
   number size {
   }
-  "List<jira.AccountIdInfo>" items {
+  "List<string>" items {
   }
   number "max-results" {
   }

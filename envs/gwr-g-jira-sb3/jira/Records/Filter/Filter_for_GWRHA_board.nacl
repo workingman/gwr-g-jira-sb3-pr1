@@ -1,10 +1,7 @@
 jira.Filter Filter_for_GWRHA_board@s {
   name = "Filter for GWRHA board"
-  owner = {
-    id = "61980f073618cd006f48823b"
-    displayName = "Geoffrey Routledge"
-  }
-  jql = "${ jira.Field.instance.Project } = ${ jira.Project.instance.GWR_HR_App@s.key } AND \"${ jira.Field.instance.GWR_Category__select__c@suuuu.name }[Dropdown]\" = Green ORDER BY ${ jira.Field.instance.Rank__c.name } ASC"
+  owner = "Geoffrey Routledge"
+  jql = "project = GWRHA ORDER BY Rank ASC"
   sharePermissions = [
     {
       type = "project"
@@ -13,5 +10,30 @@ jira.Filter Filter_for_GWRHA_board@s {
       }
     },
   ]
-  
+  _generated_dependencies = [
+    {
+      reference = jira.Field.instance.Project
+      occurrences = [
+        {
+          location = jira.Filter.instance.Filter_for_GWRHA_board@s.jql
+        },
+      ]
+    },
+    {
+      reference = jira.Field.instance.Rank__c
+      occurrences = [
+        {
+          location = jira.Filter.instance.Filter_for_GWRHA_board@s.jql
+        },
+      ]
+    },
+    {
+      reference = jira.Project.instance.GWR_HR_App@s
+      occurrences = [
+        {
+          location = jira.Filter.instance.Filter_for_GWRHA_board@s.jql
+        },
+      ]
+    },
+  ]
 }

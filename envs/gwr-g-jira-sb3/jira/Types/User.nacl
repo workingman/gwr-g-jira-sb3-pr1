@@ -1,7 +1,7 @@
 type jira.User {
   string key {
   }
-  jira.AccountIdInfo accountId {
+  string accountId {
   }
   string accountType {
   }
