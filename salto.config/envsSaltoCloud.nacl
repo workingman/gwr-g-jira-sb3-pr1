@@ -6,7 +6,11 @@ envs {
     },
     {
       uuid = "a369a21e-b3bb-47e6-9f60-8cd620f25b83"
-      folderName = "ghost"
+      folderName = "gwr-ghost1"
+    },
+    {
+      uuid = "d230eace-8825-4593-8ac0-0fda51311320"
+      folderName = "gwr-g-jira-sb3"
     },
   ]
 }
